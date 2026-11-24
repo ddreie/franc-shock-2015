@@ -1,0 +1,86 @@
+table,name,pretrend,pretrend_se,did,did_se,did_stars,sdid,sdid_se,sdid_stars,pt
+Food & Beverages,All-items HICP,0.01,0.04,-1.64,0.26,∗∗∗,-1.23,0.48,∗∗,0.12
+Food & Beverages,Food (overall index),-0.17,0.07,-1.58,0.32,∗∗∗,-1.42,0.92,,0.14
+Food & Beverages,Alcoholic beverages,0.01,0.04,-1.52,0.25,∗∗∗,-1.38,0.64,∗∗,0.14
+Food & Beverages,Beer,-0.1,0.09,-3.19,0.52,∗∗∗,-2.81,0.76,∗∗∗,0.28
+Food & Beverages,Bread and cereals,-0.01,0.03,-0.66,0.19,∗∗∗,-0.16,0.56,,0.02
+Food & Beverages,"Coffee, tea, and cocoa",0.38,0.15,-4.35,1.34,∗∗∗,-2.45,1.0,∗∗,0.24
+Food & Beverages,Fish and seafood,0.0,0.07,-3.36,0.52,∗∗∗,-3.28,1.43,∗∗,0.33
+Food & Beverages,Fruits,-0.79,0.15,-2.17,1.82,,-3.93,2.65,,0.39
+Food & Beverages,Meat,-0.02,0.09,-1.36,0.45,∗∗∗,0.12,1.05,,-0.01
+Food & Beverages,"Milk, cheese, and eggs",-0.08,0.06,-0.48,0.29,,-1.0,1.37,,0.1
+Food & Beverages,"Mineral waters, soft drinks, fruit and vegetable juices",0.11,0.08,-1.75,0.43,∗∗∗,-2.8,0.94,∗∗∗,0.28
+Food & Beverages,Non-alcoholic beverages,0.17,0.07,-2.33,0.51,∗∗∗,-2.16,0.82,∗∗∗,0.21
+Food & Beverages,Oils and fats,-0.24,0.06,-0.48,0.63,,-1.42,2.29,,0.14
+Food & Beverages,Processed food,-0.02,0.04,-1.1,0.24,∗∗∗,-1.25,0.66,∗,0.12
+Food & Beverages,Seasonal food,-0.54,0.22,-3.46,0.97,∗∗∗,-3.29,1.9,∗,0.33
+Food & Beverages,Spirits,-0.01,0.05,-1.57,0.31,∗∗∗,-0.79,0.86,,0.08
+Food & Beverages,"Sugar, jam, honey, chocolate, and confectionery",-0.06,0.07,0.07,0.42,,-0.57,1.23,,0.06
+Food & Beverages,Vegetables,-0.06,0.15,-4.79,1.6,∗∗∗,-2.16,2.67,,0.21
+Food & Beverages,Wine,-0.06,0.37,-1.21,0.38,∗∗∗,-1.63,0.7,∗∗,0.16
+Food & Beverages,Other food products,-0.15,0.06,-2.1,0.37,∗∗∗,-2.37,1.1,∗∗,0.24
+Household Products,Actual rentals for housing,0.15,0.02,-2.18,0.68,∗∗∗,-0.5,1.25,,0.05
+Household Products,Books,0.38,0.24,-8.25,0.17,∗∗∗,-4.97,1.84,∗∗∗,0.49
+Household Products,Clothing,-0.84,0.72,4.99,2.46,∗∗,2.42,2.06,,-0.24
+Household Products,Electrical appliances for personal care,-0.02,0.1,-2.89,0.57,∗∗∗,-3.21,0.65,∗∗∗,0.32
+Household Products,Equipment for sport,-0.26,0.12,-1.53,0.07,∗∗∗,-2.57,1.28,∗∗,0.25
+Household Products,Footwear,-0.89,0.7,2.61,3.16,,0.56,2.08,,-0.06
+Household Products,Household equipment,0.12,0.06,-2.93,0.66,∗∗∗,-2.07,0.62,∗∗∗,0.21
+Household Products,Furniture and furnishings,0.12,0.13,-4.61,1.02,∗∗∗,-3.18,0.86,∗∗∗,0.32
+Household Products,"Games, toys and hobbies",-0.09,0.08,-1.76,0.34,∗∗∗,-2.13,0.97,∗∗,0.21
+Household Products,"Gardens, plants and flowers",0.09,0.1,-1.45,0.6,∗∗,-1.09,1.09,,0.11
+Household Products,Garments,-0.91,0.76,5.87,2.64,∗∗,3.13,1.97,,-0.31
+Household Products,"Glassware, tableware and household utensils",0.09,0.06,-0.76,0.53,,-0.81,0.82,,0.08
+Household Products,Goods and services for routine household maintenance,-0.14,0.06,-0.72,0.41,∗,-1.04,0.58,∗,0.1
+Household Products,Household appliances,0.47,0.08,-4.08,1.61,∗∗,-2.84,0.84,∗∗∗,0.28
+Household Products,Household textiles,-0.02,0.09,-2.54,0.29,∗∗∗,-2.36,1.05,∗∗,0.23
+Household Products,Major household appliances,0.45,0.09,-3.87,1.63,∗∗,-3.36,0.85,∗∗∗,0.33
+Household Products,Non-durable household goods,-0.23,0.08,-0.41,0.49,,-1.25,0.95,,0.12
+Household Products,Other personal effects,-0.03,0.08,-1.62,0.44,∗∗∗,-1.99,1.13,∗,0.2
+Household Products,Other recreational items,0.04,0.06,-1.47,0.31,∗∗∗,-1.46,0.75,∗,0.14
+Household Products,Personal care,0.04,0.05,-2.48,0.24,∗∗∗,-1.94,0.54,∗∗∗,0.19
+Household Products,Pets and related products and services,0.21,0.07,-1.18,0.61,∗,0.5,0.4,,-0.05
+Household Products,Pharmaceutical products,0.19,0.05,-2.39,0.46,∗∗∗,-0.11,0.83,,0.01
+Household Products,Spare parts and accessories for personal transport equipment,0.03,0.03,-3.5,0.77,∗∗∗,-3.61,0.91,∗∗∗,0.36
+Household Products,Telephone and telefax equipment,0.4,0.18,-5.82,1.88,∗∗∗,0.13,2.77,,-0.01
+Household Products,Stationery,0.12,0.09,-3.6,0.32,∗∗∗,-1.61,1.28,,0.16
+Household Products,Tobacco,0.01,0.03,-1.99,0.75,∗∗∗,-0.96,1.32,,0.1
+Household Products,Tools and equipment for house and garden,0.06,0.08,-1.17,0.44,∗∗∗,-1.9,0.66,∗∗∗,0.19
+Services,Services (overall index),0.11,0.05,-2.05,0.54,∗∗∗,-1.02,0.64,,0.1
+Services,Accommodation services,1.28,0.32,-5.89,2.54,∗∗,-1.53,1.19,,0.15
+Services,Audio–visual equipment repair,0.12,0.06,-5.13,1.9,∗∗∗,-4.92,1.36,∗∗∗,0.49
+Services,"Cleaning, repair, and hire of clothing",0.0,0.02,-1.07,0.4,∗∗∗,-0.29,0.6,,0.03
+Services,Communications,-0.08,0.04,-0.06,0.38,,-1.36,1.0,,0.13
+Services,Cultural services,0.08,0.01,-2.92,0.5,∗∗∗,-1.25,0.86,,0.12
+Services,Education,0.18,0.03,-2.04,1.15,∗,-0.17,0.38,,0.02
+Services,Health,0.13,0.02,-1.36,0.17,∗∗∗,-0.32,0.8,,0.03
+Services,Maintenance and repair of the dwelling,0.07,0.03,-1.6,0.51,∗∗∗,-0.15,0.4,,0.02
+Services,Package holidays,0.43,0.61,-10.17,3.16,∗∗∗,-6.94,3.41,∗∗,0.69
+Services,Passenger transport by air,0.0,1.22,-4.15,7.36,,-4.93,7.2,,0.49
+Services,Recreational and cultural services,0.05,0.01,-1.65,0.47,∗∗∗,-0.29,0.98,,0.03
+Services,Restaurants and hotels,0.35,0.05,-3.08,0.21,∗∗∗,-1.5,0.81,∗,0.15
+Services,Restaurants and café,0.13,0.0,-2.41,0.56,∗∗∗,-0.77,0.53,,0.08
+Services,Services related to housing,0.11,0.01,-2.33,0.6,∗∗∗,-0.46,0.56,,0.05
+Services,Services related to holidays and accommodation,0.77,0.4,-7.94,2.34,∗∗∗,-3.31,2.65,,0.33
+Services,Services related to recreation and personal care,0.11,0.01,-2.15,0.5,∗∗∗,-0.57,0.46,,0.06
+Services,Services related to transport,-0.03,0.19,-1.14,1.28,,-0.78,1.36,,0.08
+Services,Telephone and telefax services,-0.1,0.04,0.96,0.38,∗∗,-0.99,1.39,,0.1
+Services,Transport insurance,0.18,0.01,-4.5,0.87,∗∗∗,-0.19,1.03,,0.02
+Services,Miscellaneous services,0.05,0.01,-1.4,0.41,∗∗∗,-0.73,0.41,∗,0.07
+Industrial and Other Goods,Industrial goods (overall index),-0.05,0.11,-2.22,0.79,∗∗∗,-2.02,0.69,∗∗∗,0.2
+Industrial and Other Goods,Durable industrial goods,0.1,0.04,-4.48,0.99,∗∗∗,-3.62,0.68,∗∗∗,0.36
+Industrial and Other Goods,Semi-durable industrial goods,-0.47,0.4,1.18,1.31,,-0.67,1.49,,0.07
+Industrial and Other Goods,Audio–visual equipment,0.12,0.06,-5.13,1.9,∗∗∗,-4.92,1.36,∗∗∗,0.49
+Industrial and Other Goods,Carpets and other floor coverings,0.14,0.08,0.75,0.5,,0.96,0.95,,-0.1
+Industrial and Other Goods,"Electricity, fuels, and heat energy",-0.15,0.08,1.15,0.37,∗∗∗,-0.82,1.25,,0.08
+Industrial and Other Goods,Energy,0.05,0.21,-3.64,2.63,,-3.88,1.8,∗∗,0.39
+Industrial and Other Goods,Transport fuels and lubricants,-0.15,0.37,-4.57,3.47,,-4.03,2.34,∗,0.4
+Industrial and Other Goods,Information processing equipment,-0.18,0.09,-1.54,1.87,,-1.38,2.03,,0.14
+Industrial and Other Goods,Liquid fuels,0.51,0.6,-7.18,8.97,,-5.13,2.77,∗,0.51
+Industrial and Other Goods,Maintenance and repair materials,0.25,0.07,-1.38,0.16,∗∗∗,0.32,0.53,,-0.03
+Industrial and Other Goods,Motorcycles and bicycles,-0.06,0.05,-6.64,0.58,∗∗∗,-7.29,1.27,∗∗∗,0.72
+Industrial and Other Goods,Operation of transport equipment,-0.05,0.2,-3.33,1.68,∗∗,-2.65,1.48,∗,0.26
+Industrial and Other Goods,Purchase of vehicles,0.08,0.01,-4.87,0.89,∗∗∗,-4.68,0.78,∗∗∗,0.46
+Industrial and Other Goods,Recreation and culture,0.13,0.15,-4.06,0.71,∗∗∗,-2.54,0.92,∗∗∗,0.25
+Industrial and Other Goods,Solid fuels,0.39,0.21,-6.58,1.55,∗∗∗,-8.01,1.02,∗∗∗,0.8
+Industrial and Other Goods,Miscellaneous goods and services,-0.12,0.02,-0.82,0.34,∗∗,-0.89,0.37,∗∗,0.09

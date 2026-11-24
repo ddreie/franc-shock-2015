@@ -30,14 +30,14 @@ export default function CategoryChart() {
         </div>
       </div>
       <p className="readout">
-        <b>{cats.length}</b> product groups shown. Average pass-through: <b>{mean.toFixed(2)}</b>, i.e. a 10% stronger
+        <b>{cats.length}</b> product categories shown. Average pass-through: <b>{mean.toFixed(2)}</b>, i.e. a 10% stronger
         franc lowered their prices by about <b>{(mean * 10).toFixed(1)}%</b> within a year.
       </p>
       {view === 'rank' ? <Ranking cats={cats} sort={sort} setSort={setSort} /> : <Scatter cats={cats} />}
       <figcaption>
         One-year exchange-rate pass-through by product group, estimated with synthetic difference-in-differences:
         the share of the 10.07% appreciation that showed up as lower Swiss prices (1 = fully passed on, 0 = not at all).
-        Values as reported by Oktay (2022); import shares from the Swiss Federal Statistical Office.
+        Source: our replication of Oktay (2022); import shares from the Swiss Federal Statistical Office.
       </figcaption>
     </figure>
   );
@@ -74,6 +74,7 @@ function Ranking({ cats, sort, setSort }: { cats: Category[]; sort: string; setS
               <span className="bar-tip">
                 <strong>{c.name}</strong><br />{c.group}<br />
                 Pass-through <b>{v.toFixed(2)}</b>
+                {c.paperPassThrough !== null && <><br />Paper <b>{c.paperPassThrough.toFixed(2)}</b></>}
                 {c.importShare !== null && <><br />Import share <b>{Math.round(c.importShare * 100)}%</b></>}
               </span>
             </div>

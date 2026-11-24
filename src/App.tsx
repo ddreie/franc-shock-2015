@@ -2,6 +2,7 @@ import PriceChart from './components/PriceChart';
 import CategoryChart from './components/CategoryChart';
 import ResultsTable from './components/ResultsTable';
 import Questions from './components/Questions';
+import SpeedChart from './components/SpeedChart';
 
 export default function App() {
   return (
@@ -35,7 +36,7 @@ export default function App() {
                 <li><b>Only about 12%</b> of the exchange-rate change showed up in consumer prices within a year.</li>
                 <li><b>Huge differences between products:</b> fuels, vehicles and package holidays got much cheaper; rents,
                   health and education hardly moved.</li>
-                <li><b>Imported products reacted more</b>, and in our extension also faster.</li>
+                <li><b>Imported products reacted faster:</b> they got cheaper within months, while other products caught up later in the year (our extension).</li>
               </ul>
             </div>
           </div>
@@ -69,6 +70,15 @@ export default function App() {
           <CategoryChart />
         </section>
 
+        <section aria-labelledby="s3b">
+          <h2 id="s3b">Fast and slow: imported goods got cheaper first</h2>
+          <p>
+            The paper reports one number per product for the whole year. We split it up month by month to see how quickly
+            the cheaper euro arrived on price tags, and whether imported products were simply quicker.
+          </p>
+          <SpeedChart />
+        </section>
+
         <section aria-labelledby="s4">
           <h2 id="s4">Test yourself: three exam-style questions</h2>
           <p>The questions get harder and challenge the assumptions behind the results above.</p>
@@ -81,6 +91,10 @@ export default function App() {
             Paper: Oktay, A. (2022). Heterogeneity in the exchange rate pass-through to consumer prices: the Swiss franc
             appreciation of 2015. <i>Swiss Journal of Economics and Statistics</i>, 158, 21.{' '}
             <a href="https://doi.org/10.1186/s41937-022-00102-7">doi.org/10.1186/s41937-022-00102-7</a>
+          </p>
+          <p>
+            All estimates on this page come from our own replication in R, starting from the raw data; the code is in the{' '}
+            <a href="https://github.com/ddreie/franc-shock-2015">GitHub repository</a>.
           </p>
           <p>
             Data: Eurostat HICP (prc_hicp_midx), SNB exchange rates and SFSO import shares, as provided in the author’s{' '}

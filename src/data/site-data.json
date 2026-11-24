@@ -2,706 +2,928 @@
  "exchangeRateChange": -0.10074937552039966,
  "categories": [
   {
-   "name": "Accommodation services",
-   "group": "Services",
-   "passThrough": 0.1519,
-   "did": -5.0068,
-   "didSe": 2.3961,
-   "didP": 0.0425,
-   "importShare": 0.0
-  },
-  {
-   "name": "Actual rentals for housing",
-   "group": "Household goods & housing",
-   "passThrough": 0.0497,
-   "did": -1.7193,
-   "didSe": 0.3538,
-   "didP": 0.0,
-   "importShare": 0.0
+   "name": "Food (overall index)",
+   "group": "Food & drink",
+   "passThrough": 0.1414,
+   "paperPassThrough": 0.14,
+   "sdid": -1.4244,
+   "sdidSe": 0.9349,
+   "importShare": 0.3907,
+   "ptEarly": 0.1426,
+   "ptLate": 0.1934
   },
   {
    "name": "Alcoholic beverages",
    "group": "Food & drink",
    "passThrough": 0.1366,
-   "did": -1.9523,
-   "didSe": 0.269,
-   "didP": 0.0,
-   "importShare": 0.4927
-  },
-  {
-   "name": "Audio-visual equipment",
-   "group": "Energy, vehicles & electronics",
-   "passThrough": 0.4881,
-   "did": -4.8314,
-   "didSe": 0.918,
-   "didP": 0.0,
-   "importShare": 1.0
+   "paperPassThrough": 0.14,
+   "sdid": -1.3762,
+   "sdidSe": 0.7033,
+   "importShare": 0.4927,
+   "ptEarly": 0.0788,
+   "ptLate": 0.1948
   },
   {
    "name": "Beer",
    "group": "Food & drink",
    "passThrough": 0.279,
-   "did": -3.1704,
-   "didSe": 0.5476,
-   "didP": 0.0,
-   "importShare": 0.2295
-  },
-  {
-   "name": "Books",
-   "group": "Household goods & housing",
-   "passThrough": 0.4928,
-   "did": -6.6676,
-   "didSe": 1.0706,
-   "didP": 0.0,
-   "importShare": 0.85
+   "paperPassThrough": 0.28,
+   "sdid": -2.8105,
+   "sdidSe": 0.7582,
+   "importShare": 0.2295,
+   "ptEarly": 0.3472,
+   "ptLate": 0.2176
   },
   {
    "name": "Bread and cereals",
    "group": "Food & drink",
    "passThrough": 0.0156,
-   "did": -0.2827,
-   "didSe": 0.182,
-   "didP": 0.1274,
-   "importShare": 0.1
+   "paperPassThrough": 0.02,
+   "sdid": -0.1571,
+   "sdidSe": 0.5128,
+   "importShare": 0.1,
+   "ptEarly": -0.0331,
+   "ptLate": 0.0483
   },
   {
-   "name": "Carpets and other floor coverings",
-   "group": "Energy, vehicles & electronics",
-   "passThrough": -0.0954,
-   "did": 0.2991,
-   "didSe": 0.4542,
-   "didP": 0.5136,
-   "importShare": 0.61
-  },
-  {
-   "name": "Cleaning, repair and hire of clothing",
-   "group": "Services",
-   "passThrough": 0.029,
-   "did": -1.2522,
-   "didSe": 0.2384,
-   "didP": 0.0,
-   "importShare": 0.0
-  },
-  {
-   "name": "Clothing",
-   "group": "Household goods & housing",
-   "passThrough": -0.2401,
-   "did": 5.3266,
-   "didSe": 3.9095,
-   "didP": 0.18,
-   "importShare": 0.95
-  },
-  {
-   "name": "Coffee, tea and cocoa",
+   "name": "Coffee, tea, and cocoa",
    "group": "Food & drink",
    "passThrough": 0.243,
-   "did": -3.3096,
-   "didSe": 0.7982,
-   "didP": 0.0002,
-   "importShare": 0.7267
-  },
-  {
-   "name": "Communications",
-   "group": "Services",
-   "passThrough": 0.1347,
-   "did": -0.7707,
-   "didSe": 0.2937,
-   "didP": 0.0119,
-   "importShare": 0.0
-  },
-  {
-   "name": "Cultural services",
-   "group": "Services",
-   "passThrough": 0.1242,
-   "did": -2.5218,
-   "didSe": 0.2897,
-   "didP": 0.0,
-   "importShare": 0.0
-  },
-  {
-   "name": "Education",
-   "group": "Services",
-   "passThrough": 0.0171,
-   "did": -0.6015,
-   "didSe": 0.3565,
-   "didP": 0.0986,
-   "importShare": 0.0
-  },
-  {
-   "name": "Electrical appliances for personal care",
-   "group": "Household goods & housing",
-   "passThrough": 0.3189,
-   "did": -3.3801,
-   "didSe": 0.3977,
-   "didP": 0.0,
-   "importShare": 0.9
-  },
-  {
-   "name": "Electricity, fuels and heat energy",
-   "group": "Energy, vehicles & electronics",
-   "passThrough": 0.0815,
-   "did": 1.2527,
-   "didSe": 0.3982,
-   "didP": 0.003,
-   "importShare": null
-  },
-  {
-   "name": "Energy",
-   "group": "Energy, vehicles & electronics",
-   "passThrough": 0.3853,
-   "did": -3.6672,
-   "didSe": 1.4817,
-   "didP": 0.0172,
-   "importShare": null
-  },
-  {
-   "name": "Equipment for sport",
-   "group": "Household goods & housing",
-   "passThrough": 0.2549,
-   "did": -2.4118,
-   "didSe": 0.6459,
-   "didP": 0.0005,
-   "importShare": 0.965
+   "paperPassThrough": 0.24,
+   "sdid": -2.4483,
+   "sdidSe": 1.05,
+   "importShare": 0.7267,
+   "ptEarly": 0.0919,
+   "ptLate": 0.3165
   },
   {
    "name": "Fish and seafood",
    "group": "Food & drink",
    "passThrough": 0.3253,
-   "did": -3.3428,
-   "didSe": 0.4839,
-   "didP": 0.0,
-   "importShare": 0.9433
-  },
-  {
-   "name": "Food (overall index)",
-   "group": "Food & drink",
-   "passThrough": 0.1414,
-   "did": -1.1118,
-   "didSe": 0.3669,
-   "didP": 0.0041,
-   "importShare": 0.3907
-  },
-  {
-   "name": "Other food products",
-   "group": "Food & drink",
-   "passThrough": 0.2354,
-   "did": -2.0849,
-   "didSe": 0.2896,
-   "didP": 0.0,
-   "importShare": 0.5
-  },
-  {
-   "name": "Footwear",
-   "group": "Household goods & housing",
-   "passThrough": -0.0559,
-   "did": 3.2952,
-   "didSe": 3.824,
-   "didP": 0.3935,
-   "importShare": 0.99
+   "paperPassThrough": 0.33,
+   "sdid": -3.2773,
+   "sdidSe": 1.3355,
+   "importShare": 0.9433,
+   "ptEarly": 0.2398,
+   "ptLate": 0.3716
   },
   {
    "name": "Fruits",
    "group": "Food & drink",
    "passThrough": 0.3905,
-   "did": -3.6545,
-   "didSe": 1.7256,
-   "didP": 0.0399,
-   "importShare": 0.6327
-  },
-  {
-   "name": "Transport fuels and lubricants",
-   "group": "Energy, vehicles & electronics",
-   "passThrough": 0.3996,
-   "did": -2.9588,
-   "didSe": 2.4326,
-   "didP": 0.2304,
-   "importShare": 1.0
-  },
-  {
-   "name": "Household equipment",
-   "group": "Household goods & housing",
-   "passThrough": 0.2053,
-   "did": -2.8841,
-   "didSe": 0.3764,
-   "didP": 0.0,
-   "importShare": 0.65
-  },
-  {
-   "name": "Furniture and furnishings",
-   "group": "Household goods & housing",
-   "passThrough": 0.3153,
-   "did": -3.8303,
-   "didSe": 0.7289,
-   "didP": 0.0,
-   "importShare": 0.7
-  },
-  {
-   "name": "Games, toys and hobbies",
-   "group": "Household goods & housing",
-   "passThrough": 0.2113,
-   "did": -2.0548,
-   "didSe": 0.3442,
-   "didP": 0.0,
-   "importShare": 0.95
-  },
-  {
-   "name": "Gardens, plants and flowers",
-   "group": "Household goods & housing",
-   "passThrough": 0.1082,
-   "did": -1.8695,
-   "didSe": 0.5917,
-   "didP": 0.0029,
-   "importShare": 0.5
-  },
-  {
-   "name": "Garments",
-   "group": "Household goods & housing",
-   "passThrough": -0.3107,
-   "did": 6.3281,
-   "didSe": 4.162,
-   "didP": 0.1356,
-   "importShare": 0.9
-  },
-  {
-   "name": "Glassware, tableware and household utensils",
-   "group": "Household goods & housing",
-   "passThrough": 0.0808,
-   "did": -1.2526,
-   "didSe": 0.4065,
-   "didP": 0.0035,
-   "importShare": 0.65
-  },
-  {
-   "name": "Goods and services for routine household maintenance",
-   "group": "Household goods & housing",
-   "passThrough": 0.1029,
-   "did": -0.9203,
-   "didSe": 0.3266,
-   "didP": 0.0072,
-   "importShare": 0.3
-  },
-  {
-   "name": "Health",
-   "group": "Services",
-   "passThrough": 0.0316,
-   "did": -1.5594,
-   "didSe": 0.1799,
-   "didP": 0.0,
-   "importShare": 0.0
-  },
-  {
-   "name": "Household appliances",
-   "group": "Household goods & housing",
-   "passThrough": 0.2819,
-   "did": -4.7858,
-   "didSe": 0.7733,
-   "didP": 0.0,
-   "importShare": 0.7
-  },
-  {
-   "name": "Household textiles",
-   "group": "Household goods & housing",
-   "passThrough": 0.2344,
-   "did": -2.6233,
-   "didSe": 0.6062,
-   "didP": 0.0001,
-   "importShare": 0.65
-  },
-  {
-   "name": "Information processing equipment",
-   "group": "Energy, vehicles & electronics",
-   "passThrough": 0.1365,
-   "did": -2.3554,
-   "didSe": 1.0075,
-   "didP": 0.024,
-   "importShare": 1.0
-  },
-  {
-   "name": "Transport insurance",
-   "group": "Services",
-   "passThrough": 0.0188,
-   "did": -4.5447,
-   "didSe": 0.4871,
-   "didP": 0.0,
-   "importShare": 0.0
-  },
-  {
-   "name": "Liquid fuels",
-   "group": "Energy, vehicles & electronics",
-   "passThrough": 0.5096,
-   "did": -7.5005,
-   "didSe": 3.6568,
-   "didP": 0.0462,
-   "importShare": 1.0
-  },
-  {
-   "name": "Maintenance and repair of the dwelling",
-   "group": "Services",
-   "passThrough": 0.0151,
-   "did": -0.9406,
-   "didSe": 0.2361,
-   "didP": 0.0003,
-   "importShare": 0.0
-  },
-  {
-   "name": "Major household appliances",
-   "group": "Household goods & housing",
-   "passThrough": 0.3335,
-   "did": -4.6199,
-   "didSe": 0.7783,
-   "didP": 0.0,
-   "importShare": 0.7
-  },
-  {
-   "name": "Maintenance and repair materials",
-   "group": "Energy, vehicles & electronics",
-   "passThrough": -0.0319,
-   "did": -1.1327,
-   "didSe": 0.3358,
-   "didP": 0.0016,
-   "importShare": 0.5
+   "paperPassThrough": 0.39,
+   "sdid": -3.9339,
+   "sdidSe": 2.7417,
+   "importShare": 0.6327,
+   "ptEarly": 0.2663,
+   "ptLate": 0.4338
   },
   {
    "name": "Meat",
    "group": "Food & drink",
    "passThrough": -0.0121,
-   "did": -0.1544,
-   "didSe": 0.3609,
-   "didP": 0.6709,
-   "importShare": 0.2344
+   "paperPassThrough": -0.01,
+   "sdid": 0.1219,
+   "sdidSe": 1.146,
+   "importShare": 0.2344,
+   "ptEarly": 0.0557,
+   "ptLate": -0.0477
   },
   {
-   "name": "Milk, cheese and eggs",
+   "name": "Milk, cheese, and eggs",
    "group": "Food & drink",
    "passThrough": 0.0994,
-   "did": 0.1515,
-   "didSe": 0.2925,
-   "didP": 0.607,
-   "importShare": 0.1967
+   "paperPassThrough": 0.1,
+   "sdid": -1.0019,
+   "sdidSe": 1.3879,
+   "importShare": 0.1967,
+   "ptEarly": 0.1343,
+   "ptLate": 0.06
   },
   {
    "name": "Mineral waters, soft drinks, fruit and vegetable juices",
    "group": "Food & drink",
    "passThrough": 0.2781,
-   "did": -1.639,
-   "didSe": 0.451,
-   "didP": 0.0007,
-   "importShare": 0.1467
-  },
-  {
-   "name": "Motorcycles and bicycles",
-   "group": "Energy, vehicles & electronics",
-   "passThrough": 0.7231,
-   "did": -7.6972,
-   "didSe": 0.3883,
-   "didP": 0.0,
-   "importShare": 0.9
-  },
-  {
-   "name": "Stationery",
-   "group": "Household goods & housing",
-   "passThrough": 0.1602,
-   "did": -2.4921,
-   "didSe": 0.4963,
-   "didP": 0.0,
-   "importShare": 0.5
+   "paperPassThrough": 0.28,
+   "sdid": -2.8017,
+   "sdidSe": 0.9705,
+   "importShare": 0.1467,
+   "ptEarly": 0.1829,
+   "ptLate": 0.3428
   },
   {
    "name": "Non-alcoholic beverages",
    "group": "Food & drink",
    "passThrough": 0.214,
-   "did": -2.0379,
-   "didSe": 0.4146,
-   "didP": 0.0,
-   "importShare": 0.4314
-  },
-  {
-   "name": "Non-durable household goods",
-   "group": "Household goods & housing",
-   "passThrough": 0.1244,
-   "did": -1.2058,
-   "didSe": 0.4453,
-   "didP": 0.0096,
-   "importShare": 0.65
+   "paperPassThrough": 0.21,
+   "sdid": -2.1556,
+   "sdidSe": 0.7979,
+   "importShare": 0.4314,
+   "ptEarly": 0.1026,
+   "ptLate": 0.2721
   },
   {
    "name": "Oils and fats",
    "group": "Food & drink",
    "passThrough": 0.1412,
-   "did": -1.542,
-   "didSe": 0.4251,
-   "didP": 0.0007,
-   "importShare": 0.3275
+   "paperPassThrough": 0.14,
+   "sdid": -1.4225,
+   "sdidSe": 2.3524,
+   "importShare": 0.3275,
+   "ptEarly": 0.054,
+   "ptLate": 0.225
   },
   {
-   "name": "Other personal effects",
-   "group": "Household goods & housing",
-   "passThrough": 0.1975,
-   "did": -2.0636,
-   "didSe": 0.5585,
-   "didP": 0.0006,
-   "importShare": 0.25
-  },
-  {
-   "name": "Other recreational items and equipment",
-   "group": "Household goods & housing",
-   "passThrough": 0.1445,
-   "did": -1.6835,
-   "didSe": 0.2996,
-   "didP": 0.0,
-   "importShare": 0.8308
-  },
-  {
-   "name": "Package holidays",
-   "group": "Services",
-   "passThrough": 0.6886,
-   "did": -8.8916,
-   "didSe": 2.9706,
-   "didP": 0.0045,
-   "importShare": 0.0
-  },
-  {
-   "name": "Passenger transport by air",
-   "group": "Services",
-   "passThrough": 0.4897,
-   "did": -4.1483,
-   "didSe": 6.1645,
-   "didP": 0.5045,
-   "importShare": 0.0
-  },
-  {
-   "name": "Personal care",
-   "group": "Household goods & housing",
-   "passThrough": 0.1927,
-   "did": -2.4908,
-   "didSe": 0.2288,
-   "didP": 0.0,
-   "importShare": 0.5429
-  },
-  {
-   "name": "Personal effects n.e.c",
-   "group": "Household goods & housing",
-   "passThrough": 0.2157,
-   "did": -1.837,
-   "didSe": 0.3316,
-   "didP": 0.0,
-   "importShare": 0.5429
-  },
-  {
-   "name": "Pets and related products and services",
-   "group": "Household goods & housing",
-   "passThrough": -0.0498,
-   "did": -0.7001,
-   "didSe": 0.3867,
-   "didP": 0.0771,
-   "importShare": 0.475
-  },
-  {
-   "name": "Pharmaceutical products",
-   "group": "Household goods & housing",
-   "passThrough": 0.0106,
-   "did": -2.5764,
-   "didSe": 0.3167,
-   "didP": 0.0,
-   "importShare": 0.7
-  },
-  {
-   "name": "Processed food excl. alcohol and tobacco",
+   "name": "Processed food",
    "group": "Food & drink",
    "passThrough": 0.1238,
-   "did": -0.6341,
-   "didSe": 0.1796,
-   "didP": 0.001,
-   "importShare": null
+   "paperPassThrough": 0.12,
+   "sdid": -1.247,
+   "sdidSe": 0.6705,
+   "importShare": null,
+   "ptEarly": 0.0775,
+   "ptLate": 0.1502
   },
   {
-   "name": "Processed food incl. alcohol and tobacco",
+   "name": "Seasonal food",
    "group": "Food & drink",
-   "passThrough": 0.087,
-   "did": -1.1128,
-   "didSe": 0.1717,
-   "didP": 0.0,
-   "importShare": null
-  },
-  {
-   "name": "Purchase of vehicles",
-   "group": "Energy, vehicles & electronics",
-   "passThrough": 0.4646,
-   "did": -4.048,
-   "didSe": 0.5632,
-   "didP": 0.0,
-   "importShare": 0.74
-  },
-  {
-   "name": "Recreation and culture",
-   "group": "Energy, vehicles & electronics",
-   "passThrough": 0.2517,
-   "did": -3.4268,
-   "didSe": 0.6731,
-   "didP": 0.0,
-   "importShare": null
-  },
-  {
-   "name": "Recreational and cultural services",
-   "group": "Services",
-   "passThrough": 0.0292,
-   "did": -1.5218,
-   "didSe": 0.2716,
-   "didP": 0.0,
-   "importShare": 0.0
-  },
-  {
-   "name": "Restaurants and hotels",
-   "group": "Services",
-   "passThrough": 0.1488,
-   "did": -2.8261,
-   "didSe": 0.636,
-   "didP": 0.0001,
-   "importShare": 0.0
-  },
-  {
-   "name": "Restaurants and caf\u201a",
-   "group": "Services",
-   "passThrough": 0.0761,
-   "did": -2.199,
-   "didSe": 0.3039,
-   "didP": 0.0,
-   "importShare": 0.0
-  },
-  {
-   "name": "Services related to communication",
-   "group": "Services",
-   "passThrough": 0.1347,
-   "did": -0.7707,
-   "didSe": 0.2937,
-   "didP": 0.0119,
-   "importShare": 0.0
-  },
-  {
-   "name": "Services related to housing",
-   "group": "Services",
-   "passThrough": 0.0454,
-   "did": -1.5313,
-   "didSe": 0.3019,
-   "didP": 0.0,
-   "importShare": 0.0
-  },
-  {
-   "name": "Services related to holidays and accommodation",
-   "group": "Services",
-   "passThrough": 0.3284,
-   "did": -6.7964,
-   "didSe": 2.4617,
-   "didP": 0.0084,
-   "importShare": 0.0
-  },
-  {
-   "name": "Services related to recreation and personal care",
-   "group": "Services",
-   "passThrough": 0.0561,
-   "did": -1.9838,
-   "didSe": 0.2846,
-   "didP": 0.0,
-   "importShare": 0.0
-  },
-  {
-   "name": "Services related to transport",
-   "group": "Services",
-   "passThrough": 0.0773,
-   "did": -0.7507,
-   "didSe": 0.8601,
-   "didP": 0.3875,
-   "importShare": 0.0
-  },
-  {
-   "name": "Solid fuels",
-   "group": "Energy, vehicles & electronics",
-   "passThrough": 0.7952,
-   "did": -6.7356,
-   "didSe": 1.2311,
-   "didP": 0.0,
-   "importShare": 1.0
-  },
-  {
-   "name": "Spare parts and accessories for personal transport equipment",
-   "group": "Household goods & housing",
-   "passThrough": 0.358,
-   "did": -3.2285,
-   "didSe": 0.4816,
-   "didP": 0.0,
-   "importShare": 1.0
+   "passThrough": 0.3264,
+   "paperPassThrough": 0.33,
+   "sdid": -3.2881,
+   "sdidSe": 1.7874,
+   "importShare": null,
+   "ptEarly": 0.3532,
+   "ptLate": 0.4958
   },
   {
    "name": "Spirits",
    "group": "Food & drink",
    "passThrough": 0.0786,
-   "did": -2.688,
-   "didSe": 0.316,
-   "didP": 0.0,
-   "importShare": 0.88
+   "paperPassThrough": 0.08,
+   "sdid": -0.7917,
+   "sdidSe": 0.9607,
+   "importShare": 0.88,
+   "ptEarly": 0.0101,
+   "ptLate": 0.1204
   },
   {
-   "name": "Sugar, jam, honey, chocolate and confectionery",
+   "name": "Sugar, jam, honey, chocolate, and confectionery",
    "group": "Food & drink",
    "passThrough": 0.057,
-   "did": 0.7614,
-   "didSe": 0.4577,
-   "didP": 0.1033,
-   "importShare": 0.3017
-  },
-  {
-   "name": "Telephone and telefax equipment",
-   "group": "Household goods & housing",
-   "passThrough": -0.0128,
-   "did": -1.6244,
-   "didSe": 1.2728,
-   "didP": 0.2086,
-   "importShare": 1.0
-  },
-  {
-   "name": "Telephone and telefax services",
-   "group": "Services",
-   "passThrough": 0.0985,
-   "did": -0.4953,
-   "didSe": 0.3129,
-   "didP": 0.1206,
-   "importShare": 0.0
-  },
-  {
-   "name": "Tobacco",
-   "group": "Food & drink",
-   "passThrough": 0.095,
-   "did": -1.9905,
-   "didSe": 0.4903,
-   "didP": 0.0002,
-   "importShare": 0.08
-  },
-  {
-   "name": "Tools and equipment for house and garden",
-   "group": "Household goods & housing",
-   "passThrough": 0.1884,
-   "did": -1.9706,
-   "didSe": 0.3683,
-   "didP": 0.0,
-   "importShare": 0.7833
+   "paperPassThrough": 0.06,
+   "sdid": -0.5742,
+   "sdidSe": 1.2948,
+   "importShare": 0.3017,
+   "ptEarly": -0.0099,
+   "ptLate": 0.0814
   },
   {
    "name": "Vegetables",
    "group": "Food & drink",
    "passThrough": 0.2142,
-   "did": -4.5366,
-   "didSe": 2.2829,
-   "didP": 0.0531,
-   "importShare": 0.3383
+   "paperPassThrough": 0.21,
+   "sdid": -2.1577,
+   "sdidSe": 2.4328,
+   "importShare": 0.3383,
+   "ptEarly": 0.3072,
+   "ptLate": 0.4721
   },
   {
    "name": "Wine",
    "group": "Food & drink",
    "passThrough": 0.1619,
-   "did": -1.2538,
-   "didSe": 0.3372,
-   "didP": 0.0006,
-   "importShare": 0.6828
+   "paperPassThrough": 0.16,
+   "sdid": -1.6312,
+   "sdidSe": 0.6805,
+   "importShare": 0.6828,
+   "ptEarly": 0.0606,
+   "ptLate": 0.2547
+  },
+  {
+   "name": "Other food products",
+   "group": "Food & drink",
+   "passThrough": 0.2354,
+   "paperPassThrough": 0.24,
+   "sdid": -2.3716,
+   "sdidSe": 0.9973,
+   "importShare": 0.5,
+   "ptEarly": 0.172,
+   "ptLate": 0.2916
+  },
+  {
+   "name": "Actual rentals for housing",
+   "group": "Household goods",
+   "passThrough": 0.0497,
+   "paperPassThrough": 0.05,
+   "sdid": -0.5003,
+   "sdidSe": 1.1515,
+   "importShare": 0.0,
+   "ptEarly": 0.0111,
+   "ptLate": 0.0969
+  },
+  {
+   "name": "Books",
+   "group": "Household goods",
+   "passThrough": 0.4928,
+   "paperPassThrough": 0.49,
+   "sdid": -4.9654,
+   "sdidSe": 1.8119,
+   "importShare": 0.85,
+   "ptEarly": 0.5678,
+   "ptLate": 0.2237
+  },
+  {
+   "name": "Clothing",
+   "group": "Household goods",
+   "passThrough": -0.2401,
+   "paperPassThrough": -0.24,
+   "sdid": 2.4187,
+   "sdidSe": 1.9926,
+   "importShare": 0.95,
+   "ptEarly": -0.258,
+   "ptLate": -0.3957
+  },
+  {
+   "name": "Electrical appliances for personal care",
+   "group": "Household goods",
+   "passThrough": 0.3189,
+   "paperPassThrough": 0.32,
+   "sdid": -3.2124,
+   "sdidSe": 0.5893,
+   "importShare": 0.9,
+   "ptEarly": 0.2371,
+   "ptLate": 0.3781
+  },
+  {
+   "name": "Equipment for sport",
+   "group": "Household goods",
+   "passThrough": 0.2549,
+   "paperPassThrough": 0.25,
+   "sdid": -2.5683,
+   "sdidSe": 1.2764,
+   "importShare": 0.965,
+   "ptEarly": 0.2498,
+   "ptLate": 0.1534
+  },
+  {
+   "name": "Footwear",
+   "group": "Household goods",
+   "passThrough": -0.0559,
+   "paperPassThrough": -0.06,
+   "sdid": 0.5629,
+   "sdidSe": 1.9977,
+   "importShare": 0.99,
+   "ptEarly": 0.0979,
+   "ptLate": -0.3216
+  },
+  {
+   "name": "Household equipment",
+   "group": "Household goods",
+   "passThrough": 0.2053,
+   "paperPassThrough": 0.21,
+   "sdid": -2.0679,
+   "sdidSe": 0.6896,
+   "importShare": 0.65,
+   "ptEarly": 0.0841,
+   "ptLate": 0.284
+  },
+  {
+   "name": "Furniture and furnishings",
+   "group": "Household goods",
+   "passThrough": 0.3153,
+   "paperPassThrough": 0.32,
+   "sdid": -3.1762,
+   "sdidSe": 0.9702,
+   "importShare": 0.7,
+   "ptEarly": 0.1323,
+   "ptLate": 0.3935
+  },
+  {
+   "name": "Games, toys and hobbies",
+   "group": "Household goods",
+   "passThrough": 0.2113,
+   "paperPassThrough": 0.21,
+   "sdid": -2.1289,
+   "sdidSe": 0.9869,
+   "importShare": 0.95,
+   "ptEarly": 0.0956,
+   "ptLate": 0.2882
+  },
+  {
+   "name": "Gardens, plants and flowers",
+   "group": "Household goods",
+   "passThrough": 0.1082,
+   "paperPassThrough": 0.11,
+   "sdid": -1.09,
+   "sdidSe": 1.0602,
+   "importShare": 0.5,
+   "ptEarly": 0.0931,
+   "ptLate": 0.1299
+  },
+  {
+   "name": "Garments",
+   "group": "Household goods",
+   "passThrough": -0.3107,
+   "paperPassThrough": -0.31,
+   "sdid": 3.1301,
+   "sdidSe": 2.0568,
+   "importShare": 0.9,
+   "ptEarly": -0.2917,
+   "ptLate": -0.484
+  },
+  {
+   "name": "Glassware, tableware and household utensils",
+   "group": "Household goods",
+   "passThrough": 0.0808,
+   "paperPassThrough": 0.08,
+   "sdid": -0.8144,
+   "sdidSe": 0.7694,
+   "importShare": 0.65,
+   "ptEarly": -0.0547,
+   "ptLate": 0.1808
+  },
+  {
+   "name": "Goods and services for routine household maintenance",
+   "group": "Household goods",
+   "passThrough": 0.1029,
+   "paperPassThrough": 0.1,
+   "sdid": -1.0368,
+   "sdidSe": 0.5929,
+   "importShare": 0.3,
+   "ptEarly": 0.0423,
+   "ptLate": 0.121
+  },
+  {
+   "name": "Household appliances",
+   "group": "Household goods",
+   "passThrough": 0.2819,
+   "paperPassThrough": 0.28,
+   "sdid": -2.8403,
+   "sdidSe": 0.8825,
+   "importShare": 0.7,
+   "ptEarly": 0.1896,
+   "ptLate": 0.3588
+  },
+  {
+   "name": "Household textiles",
+   "group": "Household goods",
+   "passThrough": 0.2344,
+   "paperPassThrough": 0.23,
+   "sdid": -2.3611,
+   "sdidSe": 1.0866,
+   "importShare": 0.65,
+   "ptEarly": 0.0402,
+   "ptLate": 0.4295
+  },
+  {
+   "name": "Major household appliances",
+   "group": "Household goods",
+   "passThrough": 0.3335,
+   "paperPassThrough": 0.33,
+   "sdid": -3.3603,
+   "sdidSe": 0.9478,
+   "importShare": 0.7,
+   "ptEarly": 0.2429,
+   "ptLate": 0.409
+  },
+  {
+   "name": "Non-durable household goods",
+   "group": "Household goods",
+   "passThrough": 0.1244,
+   "paperPassThrough": 0.12,
+   "sdid": -1.2529,
+   "sdidSe": 0.8945,
+   "importShare": 0.65,
+   "ptEarly": 0.0342,
+   "ptLate": 0.1326
+  },
+  {
+   "name": "Other personal effects",
+   "group": "Household goods",
+   "passThrough": 0.1975,
+   "paperPassThrough": 0.2,
+   "sdid": -1.9896,
+   "sdidSe": 1.1862,
+   "importShare": 0.25,
+   "ptEarly": 0.085,
+   "ptLate": 0.2145
+  },
+  {
+   "name": "Other recreational items",
+   "group": "Household goods",
+   "passThrough": 0.1445,
+   "paperPassThrough": 0.14,
+   "sdid": -1.4557,
+   "sdidSe": 0.7671,
+   "importShare": 0.8308,
+   "ptEarly": 0.094,
+   "ptLate": 0.1507
+  },
+  {
+   "name": "Personal care",
+   "group": "Household goods",
+   "passThrough": 0.1927,
+   "paperPassThrough": 0.19,
+   "sdid": -1.941,
+   "sdidSe": 0.493,
+   "importShare": 0.5429,
+   "ptEarly": 0.1499,
+   "ptLate": 0.2194
+  },
+  {
+   "name": "Pets and related products and services",
+   "group": "Household goods",
+   "passThrough": -0.0498,
+   "paperPassThrough": -0.05,
+   "sdid": 0.502,
+   "sdidSe": 0.3737,
+   "importShare": 0.475,
+   "ptEarly": -0.1812,
+   "ptLate": -0.0057
+  },
+  {
+   "name": "Pharmaceutical products",
+   "group": "Household goods",
+   "passThrough": 0.0106,
+   "paperPassThrough": 0.01,
+   "sdid": -0.107,
+   "sdidSe": 0.8028,
+   "importShare": 0.7,
+   "ptEarly": 0.0265,
+   "ptLate": 0.0118
+  },
+  {
+   "name": "Spare parts and accessories for personal transport equipment",
+   "group": "Household goods",
+   "passThrough": 0.358,
+   "paperPassThrough": 0.36,
+   "sdid": -3.6066,
+   "sdidSe": 0.8831,
+   "importShare": 1.0,
+   "ptEarly": 0.1587,
+   "ptLate": 0.5491
+  },
+  {
+   "name": "Telephone and telefax equipment",
+   "group": "Household goods",
+   "passThrough": -0.0128,
+   "paperPassThrough": -0.01,
+   "sdid": 0.1286,
+   "sdidSe": 2.8396,
+   "importShare": 1.0,
+   "ptEarly": 0.2028,
+   "ptLate": -0.2051
+  },
+  {
+   "name": "Stationery",
+   "group": "Household goods",
+   "passThrough": 0.1602,
+   "paperPassThrough": 0.16,
+   "sdid": -1.6139,
+   "sdidSe": 1.2143,
+   "importShare": 0.5,
+   "ptEarly": 0.1996,
+   "ptLate": 0.0844
+  },
+  {
+   "name": "Tobacco",
+   "group": "Household goods",
+   "passThrough": 0.095,
+   "paperPassThrough": 0.1,
+   "sdid": -0.9572,
+   "sdidSe": 1.3467,
+   "importShare": 0.08,
+   "ptEarly": 0.074,
+   "ptLate": 0.1125
+  },
+  {
+   "name": "Tools and equipment for house and garden",
+   "group": "Household goods",
+   "passThrough": 0.1884,
+   "paperPassThrough": 0.19,
+   "sdid": -1.8983,
+   "sdidSe": 0.6528,
+   "importShare": 0.7833,
+   "ptEarly": 0.1487,
+   "ptLate": 0.3203
+  },
+  {
+   "name": "Services (overall index)",
+   "group": "Services",
+   "passThrough": 0.1009,
+   "paperPassThrough": 0.1,
+   "sdid": -1.0169,
+   "sdidSe": 0.5542,
+   "importShare": null,
+   "ptEarly": 0.0248,
+   "ptLate": 0.1622
+  },
+  {
+   "name": "Accommodation services",
+   "group": "Services",
+   "passThrough": 0.1519,
+   "paperPassThrough": 0.15,
+   "sdid": -1.5302,
+   "sdidSe": 1.2558,
+   "importShare": 0.0,
+   "ptEarly": -0.2041,
+   "ptLate": 0.4815
+  },
+  {
+   "name": "Audio-visual equipment repair",
+   "group": "Services",
+   "passThrough": 0.0175,
+   "paperPassThrough": 0.49,
+   "sdid": -0.1761,
+   "sdidSe": 0.7963,
+   "importShare": null,
+   "ptEarly": 0.0218,
+   "ptLate": -0.0053
+  },
+  {
+   "name": "Cleaning, repair, and hire of clothing",
+   "group": "Services",
+   "passThrough": 0.029,
+   "paperPassThrough": 0.03,
+   "sdid": -0.2926,
+   "sdidSe": 0.6478,
+   "importShare": 0.0,
+   "ptEarly": 0.0127,
+   "ptLate": 0.0444
+  },
+  {
+   "name": "Communications",
+   "group": "Services",
+   "passThrough": 0.1347,
+   "paperPassThrough": 0.13,
+   "sdid": -1.3566,
+   "sdidSe": 0.9298,
+   "importShare": 0.0,
+   "ptEarly": 0.0347,
+   "ptLate": 0.2831
+  },
+  {
+   "name": "Cultural services",
+   "group": "Services",
+   "passThrough": 0.1242,
+   "paperPassThrough": 0.12,
+   "sdid": -1.2516,
+   "sdidSe": 0.8572,
+   "importShare": 0.0,
+   "ptEarly": 0.006,
+   "ptLate": 0.179
+  },
+  {
+   "name": "Education",
+   "group": "Services",
+   "passThrough": 0.0171,
+   "paperPassThrough": 0.02,
+   "sdid": -0.1725,
+   "sdidSe": 0.3924,
+   "importShare": 0.0,
+   "ptEarly": 0.0083,
+   "ptLate": 0.0358
+  },
+  {
+   "name": "Health",
+   "group": "Services",
+   "passThrough": 0.0316,
+   "paperPassThrough": 0.03,
+   "sdid": -0.3182,
+   "sdidSe": 0.7392,
+   "importShare": 0.0,
+   "ptEarly": 0.009,
+   "ptLate": 0.0708
+  },
+  {
+   "name": "Maintenance and repair of the dwelling",
+   "group": "Services",
+   "passThrough": 0.0151,
+   "paperPassThrough": 0.02,
+   "sdid": -0.1525,
+   "sdidSe": 0.4192,
+   "importShare": 0.0,
+   "ptEarly": 0.0172,
+   "ptLate": 0.0329
+  },
+  {
+   "name": "Package holidays",
+   "group": "Services",
+   "passThrough": 0.6886,
+   "paperPassThrough": 0.69,
+   "sdid": -6.9381,
+   "sdidSe": 3.1413,
+   "importShare": 0.0,
+   "ptEarly": 0.3768,
+   "ptLate": 0.8749
+  },
+  {
+   "name": "Passenger transport by air",
+   "group": "Services",
+   "passThrough": 0.4897,
+   "paperPassThrough": 0.49,
+   "sdid": -4.934,
+   "sdidSe": 6.6525,
+   "importShare": 0.0,
+   "ptEarly": 0.6332,
+   "ptLate": 0.5466
+  },
+  {
+   "name": "Recreational and cultural services",
+   "group": "Services",
+   "passThrough": 0.0292,
+   "paperPassThrough": 0.03,
+   "sdid": -0.294,
+   "sdidSe": 0.81,
+   "importShare": 0.0,
+   "ptEarly": 0.0039,
+   "ptLate": 0.0381
+  },
+  {
+   "name": "Restaurants and hotels",
+   "group": "Services",
+   "passThrough": 0.1488,
+   "paperPassThrough": 0.15,
+   "sdid": -1.4988,
+   "sdidSe": 0.7876,
+   "importShare": 0.0,
+   "ptEarly": -0.014,
+   "ptLate": 0.2648
+  },
+  {
+   "name": "Restaurants and café",
+   "group": "Services",
+   "passThrough": 0.0761,
+   "paperPassThrough": 0.08,
+   "sdid": -0.767,
+   "sdidSe": 0.5215,
+   "importShare": 0.0,
+   "ptEarly": 0.0138,
+   "ptLate": 0.1443
+  },
+  {
+   "name": "Services related to housing",
+   "group": "Services",
+   "passThrough": 0.0454,
+   "paperPassThrough": 0.05,
+   "sdid": -0.4574,
+   "sdidSe": 0.5504,
+   "importShare": 0.0,
+   "ptEarly": 0.0182,
+   "ptLate": 0.0859
+  },
+  {
+   "name": "Services related to holidays and accommodation",
+   "group": "Services",
+   "passThrough": 0.3284,
+   "paperPassThrough": 0.33,
+   "sdid": -3.3083,
+   "sdidSe": 2.5512,
+   "importShare": 0.0,
+   "ptEarly": -0.0062,
+   "ptLate": 0.5965
+  },
+  {
+   "name": "Services related to recreation and personal care",
+   "group": "Services",
+   "passThrough": 0.0561,
+   "paperPassThrough": 0.06,
+   "sdid": -0.5651,
+   "sdidSe": 0.4503,
+   "importShare": 0.0,
+   "ptEarly": 0.0123,
+   "ptLate": 0.0979
+  },
+  {
+   "name": "Services related to transport",
+   "group": "Services",
+   "passThrough": 0.0773,
+   "paperPassThrough": 0.08,
+   "sdid": -0.7787,
+   "sdidSe": 1.3593,
+   "importShare": 0.0,
+   "ptEarly": 0.1141,
+   "ptLate": 0.1137
+  },
+  {
+   "name": "Telephone and telefax services",
+   "group": "Services",
+   "passThrough": 0.0985,
+   "paperPassThrough": 0.1,
+   "sdid": -0.9926,
+   "sdidSe": 1.2017,
+   "importShare": 0.0,
+   "ptEarly": -0.0109,
+   "ptLate": 0.2575
+  },
+  {
+   "name": "Transport insurance",
+   "group": "Services",
+   "passThrough": 0.0188,
+   "paperPassThrough": 0.02,
+   "sdid": -0.1895,
+   "sdidSe": 1.0337,
+   "importShare": 0.0,
+   "ptEarly": 0.006,
+   "ptLate": 0.0481
+  },
+  {
+   "name": "Miscellaneous services",
+   "group": "Services",
+   "passThrough": 0.072,
+   "paperPassThrough": 0.07,
+   "sdid": -0.7255,
+   "sdidSe": 0.4076,
+   "importShare": null,
+   "ptEarly": 0.018,
+   "ptLate": 0.1288
+  },
+  {
+   "name": "Industrial goods (overall index)",
+   "group": "Energy, vehicles & other goods",
+   "passThrough": 0.2002,
+   "paperPassThrough": 0.2,
+   "sdid": -2.0173,
+   "sdidSe": 0.7091,
+   "importShare": null,
+   "ptEarly": 0.1704,
+   "ptLate": 0.1815
+  },
+  {
+   "name": "Durable industrial goods",
+   "group": "Energy, vehicles & other goods",
+   "passThrough": 0.3597,
+   "paperPassThrough": 0.36,
+   "sdid": -3.6241,
+   "sdidSe": 0.692,
+   "importShare": null,
+   "ptEarly": 0.1994,
+   "ptLate": 0.4775
+  },
+  {
+   "name": "Semi-durable industrial goods",
+   "group": "Energy, vehicles & other goods",
+   "passThrough": 0.0666,
+   "paperPassThrough": 0.07,
+   "sdid": -0.6706,
+   "sdidSe": 1.3929,
+   "importShare": null,
+   "ptEarly": 0.0524,
+   "ptLate": 0.0024
+  },
+  {
+   "name": "Audio-visual equipment",
+   "group": "Energy, vehicles & other goods",
+   "passThrough": 0.4881,
+   "paperPassThrough": 0.49,
+   "sdid": -4.9174,
+   "sdidSe": 1.4257,
+   "importShare": 1.0,
+   "ptEarly": 0.3385,
+   "ptLate": 0.4817
+  },
+  {
+   "name": "Carpets and other floor coverings",
+   "group": "Energy, vehicles & other goods",
+   "passThrough": -0.0954,
+   "paperPassThrough": -0.1,
+   "sdid": 0.9607,
+   "sdidSe": 0.9297,
+   "importShare": 0.61,
+   "ptEarly": -0.1042,
+   "ptLate": -0.0831
+  },
+  {
+   "name": "Electricity, fuels, and heat energy",
+   "group": "Energy, vehicles & other goods",
+   "passThrough": 0.0815,
+   "paperPassThrough": 0.08,
+   "sdid": -0.8207,
+   "sdidSe": 1.5251,
+   "importShare": null,
+   "ptEarly": 0.0295,
+   "ptLate": 0.1649
+  },
+  {
+   "name": "Energy",
+   "group": "Energy, vehicles & other goods",
+   "passThrough": 0.3853,
+   "paperPassThrough": 0.39,
+   "sdid": -3.8816,
+   "sdidSe": 1.7931,
+   "importShare": null,
+   "ptEarly": 0.4361,
+   "ptLate": 0.2581
+  },
+  {
+   "name": "Transport fuels and lubricants",
+   "group": "Energy, vehicles & other goods",
+   "passThrough": 0.3996,
+   "paperPassThrough": 0.4,
+   "sdid": -4.0257,
+   "sdidSe": 2.282,
+   "importShare": 1.0,
+   "ptEarly": 0.605,
+   "ptLate": 0.1169
+  },
+  {
+   "name": "Information processing equipment",
+   "group": "Energy, vehicles & other goods",
+   "passThrough": 0.1365,
+   "paperPassThrough": 0.14,
+   "sdid": -1.3751,
+   "sdidSe": 1.9672,
+   "importShare": 1.0,
+   "ptEarly": 0.1559,
+   "ptLate": -0.0611
+  },
+  {
+   "name": "Liquid fuels",
+   "group": "Energy, vehicles & other goods",
+   "passThrough": 0.5096,
+   "paperPassThrough": 0.51,
+   "sdid": -5.1337,
+   "sdidSe": 2.9667,
+   "importShare": 1.0,
+   "ptEarly": 0.7469,
+   "ptLate": -0.0035
+  },
+  {
+   "name": "Maintenance and repair materials",
+   "group": "Energy, vehicles & other goods",
+   "passThrough": -0.0319,
+   "paperPassThrough": -0.03,
+   "sdid": 0.3214,
+   "sdidSe": 0.5561,
+   "importShare": 0.5,
+   "ptEarly": -0.0769,
+   "ptLate": 0.0496
+  },
+  {
+   "name": "Motorcycles and bicycles",
+   "group": "Energy, vehicles & other goods",
+   "passThrough": 0.7231,
+   "paperPassThrough": 0.72,
+   "sdid": -7.2849,
+   "sdidSe": 1.3639,
+   "importShare": 0.9,
+   "ptEarly": 0.5691,
+   "ptLate": 0.8035
+  },
+  {
+   "name": "Operation of transport equipment",
+   "group": "Energy, vehicles & other goods",
+   "passThrough": 0.2632,
+   "paperPassThrough": 0.26,
+   "sdid": -2.6516,
+   "sdidSe": 1.3625,
+   "importShare": null,
+   "ptEarly": 0.366,
+   "ptLate": 0.1211
+  },
+  {
+   "name": "Purchase of vehicles",
+   "group": "Energy, vehicles & other goods",
+   "passThrough": 0.4646,
+   "paperPassThrough": 0.46,
+   "sdid": -4.6811,
+   "sdidSe": 0.8132,
+   "importShare": 0.74,
+   "ptEarly": 0.2774,
+   "ptLate": 0.648
+  },
+  {
+   "name": "Recreation and culture",
+   "group": "Energy, vehicles & other goods",
+   "passThrough": 0.2517,
+   "paperPassThrough": 0.25,
+   "sdid": -2.5363,
+   "sdidSe": 0.9044,
+   "importShare": null,
+   "ptEarly": 0.1528,
+   "ptLate": 0.279
+  },
+  {
+   "name": "Solid fuels",
+   "group": "Energy, vehicles & other goods",
+   "passThrough": 0.7952,
+   "paperPassThrough": 0.8,
+   "sdid": -8.0118,
+   "sdidSe": 0.9737,
+   "importShare": 1.0,
+   "ptEarly": 0.3278,
+   "ptLate": 0.8811
+  },
+  {
+   "name": "Miscellaneous goods and services",
+   "group": "Energy, vehicles & other goods",
+   "passThrough": 0.088,
+   "paperPassThrough": 0.09,
+   "sdid": -0.8868,
+   "sdidSe": 0.3378,
+   "importShare": null,
+   "ptEarly": 0.057,
+   "ptLate": 0.1079
   }
  ],
  "prices": [
@@ -994,5 +1216,168 @@
    "High Gdp": 101.964
   }
  ],
- "source": "Oktay (2022) replication package, Inputs/tradability_data.csv and control_graph_data.csv"
+ "speed": {
+  "months": [
+   "Feb 2015",
+   "Mar 2015",
+   "Apr 2015",
+   "May 2015",
+   "Jun 2015",
+   "Jul 2015",
+   "Aug 2015",
+   "Sep 2015",
+   "Oct 2015",
+   "Nov 2015",
+   "Dec 2015"
+  ],
+  "allItems": [
+   {
+    "pt": 0.0587,
+    "se": 0.0531
+   },
+   {
+    "pt": 0.0758,
+    "se": 0.052
+   },
+   {
+    "pt": 0.1315,
+    "se": 0.0558
+   },
+   {
+    "pt": 0.1579,
+    "se": 0.0665
+   },
+   {
+    "pt": 0.1246,
+    "se": 0.0694
+   },
+   {
+    "pt": 0.1126,
+    "se": 0.0707
+   },
+   {
+    "pt": 0.1523,
+    "se": 0.0712
+   },
+   {
+    "pt": 0.1228,
+    "se": 0.0683
+   },
+   {
+    "pt": 0.1207,
+    "se": 0.064
+   },
+   {
+    "pt": 0.1368,
+    "se": 0.0581
+   },
+   {
+    "pt": 0.1441,
+    "se": 0.0614
+   }
+  ],
+  "groups": {
+   "Goods, low import share": {
+    "values": [
+     0.0622,
+     0.0651,
+     0.125,
+     0.1393,
+     0.1323,
+     0.1363,
+     0.1299,
+     0.1597,
+     0.1793,
+     0.1578,
+     0.2
+    ],
+    "n": 26
+   },
+   "Goods, high import share": {
+    "values": [
+     0.1713,
+     0.1838,
+     0.2584,
+     0.3068,
+     0.2762,
+     0.3162,
+     0.3525,
+     0.2694,
+     0.2504,
+     0.203,
+     0.2112
+    ],
+    "n": 26
+   },
+   "Services (nothing imported)": {
+    "values": [
+     0.1127,
+     0.016,
+     0.0358,
+     0.1314,
+     0.1226,
+     0.0515,
+     0.2437,
+     0.1196,
+     0.1547,
+     0.2605,
+     0.2626
+    ],
+    "n": 19
+   }
+  },
+  "medianImportShare": 0.6664
+ },
+ "summary": {
+  "All-items synthetic DID": -1.2253,
+  "All-items placebo SE": 0.4769,
+  "All-items pass-through": 0.1216,
+  "Categories reproduced to +-0.01 (synthetic DID)": 84.0,
+  "Mean pass-through (85 categories)": 0.1788,
+  "Mean synthetic DID SE": 1.2043,
+  "Min pass-through": -0.3107,
+  "Max pass-through": 0.7952,
+  "Significant at 5% (synthetic DID)": 30.0,
+  "Standard DID all items, 10-country high-GDP control (code)": -1.6438,
+  "Standard DID all items, 33-country Europe (text)": -1.2929,
+  "Categories reproduced to +-0.01 (standard DID, high-GDP)": 84.0,
+  "Categories reproduced to +-0.01 (pre-trend, high-GDP)": 82.0
+ },
+ "extension": {
+  "|PT 1y|": {
+   "b": 0.1963,
+   "se": 0.0606,
+   "n": 71
+  },
+  "PT 1y": {
+   "b": 0.1359,
+   "se": 0.0729,
+   "n": 71
+  },
+  "PT early": {
+   "b": 0.1632,
+   "se": 0.0676,
+   "n": 71
+  },
+  "PT late": {
+   "b": -0.0056,
+   "se": 0.096,
+   "n": 71
+  },
+  "Change": {
+   "b": -0.1688,
+   "se": 0.0893,
+   "n": 71
+  }
+ },
+ "allItems": {
+  "sdid": -1.2253,
+  "sdidSe": 0.4769,
+  "pt": 0.1216,
+  "didHighgdp": -1.6438,
+  "didHighgdpSe": 0.2641,
+  "didEurope33": -1.2929,
+  "didEurope33Se": 0.2808
+ },
+ "source": "Our R replication (analysis/) of Oktay (2022) from the raw data in the author's replication package"
 }

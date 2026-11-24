@@ -12,9 +12,10 @@ student IDs or e-mail addresses on the page or in commits' visible content.
 | Part | Where | Notes |
 |---|---|---|
 | Frontend | `src/` – React + TypeScript (Vite), no chart library: charts are hand-written SVG | Hosted on Vercel, project `franc-shock-2015` |
-| Data for the site | `src/data/site-data.json`, built by `scripts/build_data.py` from `data/` | Currently from the author's replication package (`data/author/`). Will be replaced by the output of our own R replication |
-| Replication code | `analysis/` (R, to be added) | Should write CSVs into `data/ours/`; then point `scripts/build_data.py` at them |
-| Hand-typed numbers | `mainResults` in `src/data.ts` | Main table (paper vs. our replication). Keep in sync with the report |
+| Replication code | `analysis/` (R). `Rscript analysis/master.R` runs everything from the raw data in `data/author/` (~35 min) | Writes CSVs to `data/ours/` and LaTeX tables / PDF figures to `analysis/output/`. R 4.3.3, synthdid 0.0.9 (install from GitHub source) |
+| Category mapping | `analysis/category_map.csv` | Paper category name -> Eurostat series -> SFSO import-share label. Choices are documented in the `note` column |
+| Data for the site | `src/data/site-data.json`, built by `scripts/build_data.py` from `data/ours/` (+ `data/author/control_graph_data.csv` for the price paths) | Re-run the script after the R analysis changes |
+| Paper benchmark | `data/author/paper_tables_5to8.csv` | Tables 5-8 of the paper, typed from the PDF, for comparisons |
 | Deploy | Vercel's GitHub integration | Every push to `main` goes live in ~1 minute; other branches get a preview URL (shown on the commit / PR on GitHub). The repo is public, so commits by all collaborators deploy on the free plan |
 
 ## Requirements from the assignment (do not break these)
@@ -27,7 +28,7 @@ student IDs or e-mail addresses on the page or in commits' visible content.
 ## How to deliver a change
 
 1. `git pull --rebase origin main` first – other team members push to the same repository.
-2. Change the code. If you changed data inputs, run `python3 scripts/build_data.py`.
+2. Change the code. If you changed the analysis, run `Rscript analysis/master.R` and then `python3 scripts/build_data.py`.
 3. Run `npm install` (first time) and `npm run build` (type-check + build). For visual changes, serve `dist/`
    (`npx vite preview`) and look at a Playwright screenshot before pushing.
 4. Commit with a clear message and push to `main`. For larger redesigns push to a branch first and share the preview URL.
