@@ -112,4 +112,6 @@ g4 <- ggplot(fig4, aes(month, value, colour = series)) + geom_vline(xintercept =
   labs(x = NULL, y = "HICP, Jan 2015 = 100", title = "Switzerland and its synthetic control")
 ggsave(file.path(OUT, "fig4_replication.pdf"), g4, width = 4.2, height = 3.2)
 write_csv(tibble(country = rownames(r1$setup$Y)[1:r1$setup$N0], weight = w$omega), file.path(DATA_OURS, "synthetic_weights_all_items.csv"))
+write_csv(fig4 |> pivot_wider(names_from = series, values_from = value) |>
+            mutate(lambda = c(w$lambda, rep(0, 24 - length(w$lambda)))), file.path(DATA_OURS, "synthetic_path_all_items.csv"))
 cat("Outputs written to", DATA_OURS, "and", OUT, "\n")

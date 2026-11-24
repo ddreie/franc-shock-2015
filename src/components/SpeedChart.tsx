@@ -4,7 +4,7 @@ import { data } from '../data';
 const W = 760, H = 340, M = { top: 20, right: 190, bottom: 36, left: 48 };
 const GROUP_ORDER = ['Goods, high import share', 'Goods, low import share', 'Services (nothing imported)'];
 const GROUP_CLASS: Record<string, string> = {
-  'Goods, high import share': 's1', 'Goods, low import share': 's2', 'Services (nothing imported)': 's3',
+  'Goods, high import share': 'g1', 'Goods, low import share': 'g2', 'Services (nothing imported)': 'g3',
 };
 
 export default function SpeedChart() {
@@ -31,13 +31,14 @@ export default function SpeedChart() {
   }
 
   // end labels, nudged apart
-  const ends = (view === 'all' ? [{ label: 'All items', v: all[n - 1].pt, cls: 's1' }]
+  const ends = (view === 'all' ? [{ label: 'All items', v: all[n - 1].pt, cls: 'ch' }]
     : groups.map(gr => ({ label: gr.g, v: gr.values[n - 1], cls: GROUP_CLASS[gr.g] }))).sort((a, b) => y(a.v) - y(b.v));
   let last = -Infinity; const ly = ends.map(e => { const p = Math.max(y(e.v), last + 16); last = p; return p; });
 
   return (
-    <figure className="viz">
-      <div className="controls">
+    <figure className="fig">
+      <div className="fig-head">
+        <span className="fig-title">How fast? Pass-through month by month</span>
         <div className="seg" role="group" aria-label="View">
           <button aria-pressed={view === 'groups'} onClick={() => setView('groups')}>By import share</button>
           <button aria-pressed={view === 'all'} onClick={() => setView('all')}>All items, with uncertainty</button>
@@ -61,7 +62,7 @@ export default function SpeedChart() {
             <path className="band" d={`${path(all.map(p => p.pt + 1.96 * p.se))}L${[...all].reverse().map((p, k) => `${x(n - 1 - k).toFixed(1)},${y(p.pt - 1.96 * p.se).toFixed(1)}`).join('L')}Z`} />
             <line x1={M.left} x2={W - M.right} y1={y(data.allItems.pt)} y2={y(data.allItems.pt)} className="shock" />
             <text x={M.left + 6} y={y(data.allItems.pt) - 6} className="annot">1-year average {data.allItems.pt.toFixed(2)}</text>
-            <path d={path(all.map(p => p.pt))} className="line s1" />
+            <path d={path(all.map(p => p.pt))} className="line ch" />
           </>
         ) : groups.map(gr => <path key={gr.g} d={path(gr.values)} className={`line ${GROUP_CLASS[gr.g]}`} />)}
         {ends.map((e, k) => <text key={e.label} x={W - M.right + 10} y={ly[k] + 4} className="endlabel">{e.label.replace(' (nothing imported)', '')}</text>)}
@@ -84,11 +85,11 @@ export default function SpeedChart() {
             October–December: {groups.map((gr, k) => <span key={gr.g}>{k ? ', ' : ''}<b>{late(gr.values).toFixed(2)}</b></span>)}.
             Imported goods got cheaper right away; the rest caught up during the year, so by December the gap had closed.</>}
       </p>
-      <figcaption>
+      <p className="caption">
         Monthly pass-through after the shock (our extension): synthetic difference-in-differences effect in each month, using the weights of the
         main estimate, divided by the 10.07% appreciation. Groups: services (import share 0) and goods below/above the median import share among
         goods ({Math.round(s.medianImportShare * 100)}%). Import shares: Swiss Federal Statistical Office. Source: our replication.
-      </figcaption>
+      </p>
     </figure>
   );
 }

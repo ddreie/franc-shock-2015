@@ -56,11 +56,29 @@ keys = ["Switzerland", "Europe", "EU", "Eurozone", "Direct neighbours", "Germani
 for i, r in enumerate(rowsg):
     series.append({"month": mlabels[i], **{k: round(float(r[k]), 3) for k in keys}})
 
+# EUR/CHF monthly averages (SNB)
+fx = [{"month": r["month"], "rate": float(r["eurchf"])} for r in read("data/snb/eurchf_monthly.csv")]
+
+# Synthetic control for the all-items index: path and country weights
+path = read("data/ours/synthetic_path_all_items.csv")
+synth = {"switzerland": [round(float(r["Switzerland"]), 3) for r in path],
+         "synthetic": [round(float(r["Synthetic"]), 3) for r in path],
+         "lambda": [round(float(r["lambda"]), 4) for r in path],
+         "weights": sorted([{"country": r["country"], "weight": round(float(r["weight"]), 4)}
+                            for r in read("data/ours/synthetic_weights_all_items.csv")], key=lambda d: -d["weight"])}
+
+# International tradability (author's package, Fig. 5), matched by category name
+norm = lambda x: x.lower().replace("–", "-").replace(", and", " and").replace("é", "e").strip()
+trad = {norm(r["Goodtype"]): float(r["Tradability"]) for r in read("data/author/tradability_data.csv")}
+for c in cats:
+    c["tradability"] = trad.get(norm(c["name"]))
+
 out = {"exchangeRateChange": dS, "categories": cats, "prices": series, "speed": speed, "summary": summary,
-       "extension": ext,
+       "extension": ext, "fx": fx, "synth": synth,
+       "robustness": [{"spec": r["spec"], "sdid": num(r["sdid"]), "pt": num(r["pt"])} for r in read("data/ours/robustness_all_items.csv")],
        "allItems": {"sdid": num(allitems["sdid"]), "sdidSe": num(allitems["sdid_se"]), "pt": num(allitems["pt"]),
                     "didHighgdp": num(allitems["did_highgdp"]), "didHighgdpSe": num(allitems["did_highgdp_se"]),
                     "didEurope33": num(allitems["did_europe33"]), "didEurope33Se": num(allitems["did_europe33_se"])},
        "source": "Our R replication (analysis/) of Oktay (2022) from the raw data in the author's replication package"}
 (root / "src/data/site-data.json").write_text(json.dumps(out, indent=1, ensure_ascii=False))
-print(len(cats), "categories;", {g: v["n"] for g, v in speed["groups"].items()}, "categories per import group")
+print(sum(c["tradability"] is not None for c in cats), "with tradability;", len(cats), "categories;", {g: v["n"] for g, v in speed["groups"].items()}, "categories per import group")

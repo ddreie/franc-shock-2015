@@ -10,7 +10,8 @@
    "sdidSe": 0.9349,
    "importShare": 0.3907,
    "ptEarly": 0.1426,
-   "ptLate": 0.1934
+   "ptLate": 0.1934,
+   "tradability": 13.15
   },
   {
    "name": "Alcoholic beverages",
@@ -21,7 +22,8 @@
    "sdidSe": 0.7033,
    "importShare": 0.4927,
    "ptEarly": 0.0788,
-   "ptLate": 0.1948
+   "ptLate": 0.1948,
+   "tradability": 29.93
   },
   {
    "name": "Beer",
@@ -32,7 +34,8 @@
    "sdidSe": 0.7582,
    "importShare": 0.2295,
    "ptEarly": 0.3472,
-   "ptLate": 0.2176
+   "ptLate": 0.2176,
+   "tradability": 15.92
   },
   {
    "name": "Bread and cereals",
@@ -43,7 +46,8 @@
    "sdidSe": 0.5128,
    "importShare": 0.1,
    "ptEarly": -0.0331,
-   "ptLate": 0.0483
+   "ptLate": 0.0483,
+   "tradability": 5.21
   },
   {
    "name": "Coffee, tea, and cocoa",
@@ -54,7 +58,8 @@
    "sdidSe": 1.05,
    "importShare": 0.7267,
    "ptEarly": 0.0919,
-   "ptLate": 0.3165
+   "ptLate": 0.3165,
+   "tradability": 13.15
   },
   {
    "name": "Fish and seafood",
@@ -65,7 +70,8 @@
    "sdidSe": 1.3355,
    "importShare": 0.9433,
    "ptEarly": 0.2398,
-   "ptLate": 0.3716
+   "ptLate": 0.3716,
+   "tradability": 21.05
   },
   {
    "name": "Fruits",
@@ -76,7 +82,8 @@
    "sdidSe": 2.7417,
    "importShare": 0.6327,
    "ptEarly": 0.2663,
-   "ptLate": 0.4338
+   "ptLate": 0.4338,
+   "tradability": 37.5
   },
   {
    "name": "Meat",
@@ -87,7 +94,8 @@
    "sdidSe": 1.146,
    "importShare": 0.2344,
    "ptEarly": 0.0557,
-   "ptLate": -0.0477
+   "ptLate": -0.0477,
+   "tradability": 7.94
   },
   {
    "name": "Milk, cheese, and eggs",
@@ -98,7 +106,8 @@
    "sdidSe": 1.3879,
    "importShare": 0.1967,
    "ptEarly": 0.1343,
-   "ptLate": 0.06
+   "ptLate": 0.06,
+   "tradability": 1.07
   },
   {
    "name": "Mineral waters, soft drinks, fruit and vegetable juices",
@@ -109,7 +118,8 @@
    "sdidSe": 0.9705,
    "importShare": 0.1467,
    "ptEarly": 0.1829,
-   "ptLate": 0.3428
+   "ptLate": 0.3428,
+   "tradability": 5.14
   },
   {
    "name": "Non-alcoholic beverages",
@@ -120,7 +130,8 @@
    "sdidSe": 0.7979,
    "importShare": 0.4314,
    "ptEarly": 0.1026,
-   "ptLate": 0.2721
+   "ptLate": 0.2721,
+   "tradability": 5.14
   },
   {
    "name": "Oils and fats",
@@ -131,7 +142,8 @@
    "sdidSe": 2.3524,
    "importShare": 0.3275,
    "ptEarly": 0.054,
-   "ptLate": 0.225
+   "ptLate": 0.225,
+   "tradability": 2.84
   },
   {
    "name": "Processed food",
@@ -142,7 +154,8 @@
    "sdidSe": 0.6705,
    "importShare": null,
    "ptEarly": 0.0775,
-   "ptLate": 0.1502
+   "ptLate": 0.1502,
+   "tradability": null
   },
   {
    "name": "Seasonal food",
@@ -153,7 +166,8 @@
    "sdidSe": 1.7874,
    "importShare": null,
    "ptEarly": 0.3532,
-   "ptLate": 0.4958
+   "ptLate": 0.4958,
+   "tradability": null
   },
   {
    "name": "Spirits",
@@ -164,7 +178,8 @@
    "sdidSe": 0.9607,
    "importShare": 0.88,
    "ptEarly": 0.0101,
-   "ptLate": 0.1204
+   "ptLate": 0.1204,
+   "tradability": 42.57
   },
   {
    "name": "Sugar, jam, honey, chocolate, and confectionery",
@@ -175,7 +190,8 @@
    "sdidSe": 1.2948,
    "importShare": 0.3017,
    "ptEarly": -0.0099,
-   "ptLate": 0.0814
+   "ptLate": 0.0814,
+   "tradability": 16.8
   },
   {
    "name": "Vegetables",
@@ -186,7 +202,8 @@
    "sdidSe": 2.4328,
    "importShare": 0.3383,
    "ptEarly": 0.3072,
-   "ptLate": 0.4721
+   "ptLate": 0.4721,
+   "tradability": 24.6
   },
   {
    "name": "Wine",
@@ -197,7 +214,8 @@
    "sdidSe": 0.6805,
    "importShare": 0.6828,
    "ptEarly": 0.0606,
-   "ptLate": 0.2547
+   "ptLate": 0.2547,
+   "tradability": 44.76
   },
   {
    "name": "Other food products",
@@ -208,7 +226,8 @@
    "sdidSe": 0.9973,
    "importShare": 0.5,
    "ptEarly": 0.172,
-   "ptLate": 0.2916
+   "ptLate": 0.2916,
+   "tradability": 13.15
   },
   {
    "name": "Actual rentals for housing",
@@ -219,7 +238,8 @@
    "sdidSe": 1.1515,
    "importShare": 0.0,
    "ptEarly": 0.0111,
-   "ptLate": 0.0969
+   "ptLate": 0.0969,
+   "tradability": 0.0
   },
   {
    "name": "Books",
@@ -230,7 +250,8 @@
    "sdidSe": 1.8119,
    "importShare": 0.85,
    "ptEarly": 0.5678,
-   "ptLate": 0.2237
+   "ptLate": 0.2237,
+   "tradability": 7.43
   },
   {
    "name": "Clothing",
@@ -241,7 +262,8 @@
    "sdidSe": 1.9926,
    "importShare": 0.95,
    "ptEarly": -0.258,
-   "ptLate": -0.3957
+   "ptLate": -0.3957,
+   "tradability": 466.01
   },
   {
    "name": "Electrical appliances for personal care",
@@ -252,7 +274,8 @@
    "sdidSe": 0.5893,
    "importShare": 0.9,
    "ptEarly": 0.2371,
-   "ptLate": 0.3781
+   "ptLate": 0.3781,
+   "tradability": 55.43
   },
   {
    "name": "Equipment for sport",
@@ -263,7 +286,8 @@
    "sdidSe": 1.2764,
    "importShare": 0.965,
    "ptEarly": 0.2498,
-   "ptLate": 0.1534
+   "ptLate": 0.1534,
+   "tradability": 59.88
   },
   {
    "name": "Footwear",
@@ -274,7 +298,8 @@
    "sdidSe": 1.9977,
    "importShare": 0.99,
    "ptEarly": 0.0979,
-   "ptLate": -0.3216
+   "ptLate": -0.3216,
+   "tradability": 466.01
   },
   {
    "name": "Household equipment",
@@ -285,7 +310,8 @@
    "sdidSe": 0.6896,
    "importShare": 0.65,
    "ptEarly": 0.0841,
-   "ptLate": 0.284
+   "ptLate": 0.284,
+   "tradability": 37.2
   },
   {
    "name": "Furniture and furnishings",
@@ -296,7 +322,8 @@
    "sdidSe": 0.9702,
    "importShare": 0.7,
    "ptEarly": 0.1323,
-   "ptLate": 0.3935
+   "ptLate": 0.3935,
+   "tradability": 86.2
   },
   {
    "name": "Games, toys and hobbies",
@@ -307,7 +334,8 @@
    "sdidSe": 0.9869,
    "importShare": 0.95,
    "ptEarly": 0.0956,
-   "ptLate": 0.2882
+   "ptLate": 0.2882,
+   "tradability": 709.81
   },
   {
    "name": "Gardens, plants and flowers",
@@ -318,7 +346,8 @@
    "sdidSe": 1.0602,
    "importShare": 0.5,
    "ptEarly": 0.0931,
-   "ptLate": 0.1299
+   "ptLate": 0.1299,
+   "tradability": 10.81
   },
   {
    "name": "Garments",
@@ -329,7 +358,8 @@
    "sdidSe": 2.0568,
    "importShare": 0.9,
    "ptEarly": -0.2917,
-   "ptLate": -0.484
+   "ptLate": -0.484,
+   "tradability": 466.01
   },
   {
    "name": "Glassware, tableware and household utensils",
@@ -340,7 +370,8 @@
    "sdidSe": 0.7694,
    "importShare": 0.65,
    "ptEarly": -0.0547,
-   "ptLate": 0.1808
+   "ptLate": 0.1808,
+   "tradability": 45.84
   },
   {
    "name": "Goods and services for routine household maintenance",
@@ -351,7 +382,8 @@
    "sdidSe": 0.5929,
    "importShare": 0.3,
    "ptEarly": 0.0423,
-   "ptLate": 0.121
+   "ptLate": 0.121,
+   "tradability": 9.72
   },
   {
    "name": "Household appliances",
@@ -362,7 +394,8 @@
    "sdidSe": 0.8825,
    "importShare": 0.7,
    "ptEarly": 0.1896,
-   "ptLate": 0.3588
+   "ptLate": 0.3588,
+   "tradability": 137.24
   },
   {
    "name": "Household textiles",
@@ -373,7 +406,8 @@
    "sdidSe": 1.0866,
    "importShare": 0.65,
    "ptEarly": 0.0402,
-   "ptLate": 0.4295
+   "ptLate": 0.4295,
+   "tradability": 466.01
   },
   {
    "name": "Major household appliances",
@@ -384,7 +418,8 @@
    "sdidSe": 0.9478,
    "importShare": 0.7,
    "ptEarly": 0.2429,
-   "ptLate": 0.409
+   "ptLate": 0.409,
+   "tradability": 64.09
   },
   {
    "name": "Non-durable household goods",
@@ -395,7 +430,8 @@
    "sdidSe": 0.8945,
    "importShare": 0.65,
    "ptEarly": 0.0342,
-   "ptLate": 0.1326
+   "ptLate": 0.1326,
+   "tradability": 137.24
   },
   {
    "name": "Other personal effects",
@@ -406,7 +442,8 @@
    "sdidSe": 1.1862,
    "importShare": 0.25,
    "ptEarly": 0.085,
-   "ptLate": 0.2145
+   "ptLate": 0.2145,
+   "tradability": 45.84
   },
   {
    "name": "Other recreational items",
@@ -417,7 +454,8 @@
    "sdidSe": 0.7671,
    "importShare": 0.8308,
    "ptEarly": 0.094,
-   "ptLate": 0.1507
+   "ptLate": 0.1507,
+   "tradability": null
   },
   {
    "name": "Personal care",
@@ -428,7 +466,8 @@
    "sdidSe": 0.493,
    "importShare": 0.5429,
    "ptEarly": 0.1499,
-   "ptLate": 0.2194
+   "ptLate": 0.2194,
+   "tradability": 45.84
   },
   {
    "name": "Pets and related products and services",
@@ -439,7 +478,8 @@
    "sdidSe": 0.3737,
    "importShare": 0.475,
    "ptEarly": -0.1812,
-   "ptLate": -0.0057
+   "ptLate": -0.0057,
+   "tradability": 6.76
   },
   {
    "name": "Pharmaceutical products",
@@ -450,7 +490,8 @@
    "sdidSe": 0.8028,
    "importShare": 0.7,
    "ptEarly": 0.0265,
-   "ptLate": 0.0118
+   "ptLate": 0.0118,
+   "tradability": 71.47
   },
   {
    "name": "Spare parts and accessories for personal transport equipment",
@@ -461,7 +502,8 @@
    "sdidSe": 0.8831,
    "importShare": 1.0,
    "ptEarly": 0.1587,
-   "ptLate": 0.5491
+   "ptLate": 0.5491,
+   "tradability": 55.54
   },
   {
    "name": "Telephone and telefax equipment",
@@ -472,7 +514,8 @@
    "sdidSe": 2.8396,
    "importShare": 1.0,
    "ptEarly": 0.2028,
-   "ptLate": -0.2051
+   "ptLate": -0.2051,
+   "tradability": 146.38
   },
   {
    "name": "Stationery",
@@ -483,7 +526,8 @@
    "sdidSe": 1.2143,
    "importShare": 0.5,
    "ptEarly": 0.1996,
-   "ptLate": 0.0844
+   "ptLate": 0.0844,
+   "tradability": 11.55
   },
   {
    "name": "Tobacco",
@@ -494,7 +538,8 @@
    "sdidSe": 1.3467,
    "importShare": 0.08,
    "ptEarly": 0.074,
-   "ptLate": 0.1125
+   "ptLate": 0.1125,
+   "tradability": 4.04
   },
   {
    "name": "Tools and equipment for house and garden",
@@ -505,7 +550,8 @@
    "sdidSe": 0.6528,
    "importShare": 0.7833,
    "ptEarly": 0.1487,
-   "ptLate": 0.3203
+   "ptLate": 0.3203,
+   "tradability": 37.2
   },
   {
    "name": "Services (overall index)",
@@ -516,7 +562,8 @@
    "sdidSe": 0.5542,
    "importShare": null,
    "ptEarly": 0.0248,
-   "ptLate": 0.1622
+   "ptLate": 0.1622,
+   "tradability": null
   },
   {
    "name": "Accommodation services",
@@ -527,7 +574,8 @@
    "sdidSe": 1.2558,
    "importShare": 0.0,
    "ptEarly": -0.2041,
-   "ptLate": 0.4815
+   "ptLate": 0.4815,
+   "tradability": 9.09
   },
   {
    "name": "Audio-visual equipment repair",
@@ -538,7 +586,8 @@
    "sdidSe": 0.7963,
    "importShare": null,
    "ptEarly": 0.0218,
-   "ptLate": -0.0053
+   "ptLate": -0.0053,
+   "tradability": null
   },
   {
    "name": "Cleaning, repair, and hire of clothing",
@@ -549,7 +598,8 @@
    "sdidSe": 0.6478,
    "importShare": 0.0,
    "ptEarly": 0.0127,
-   "ptLate": 0.0444
+   "ptLate": 0.0444,
+   "tradability": 0.0
   },
   {
    "name": "Communications",
@@ -560,7 +610,8 @@
    "sdidSe": 0.9298,
    "importShare": 0.0,
    "ptEarly": 0.0347,
-   "ptLate": 0.2831
+   "ptLate": 0.2831,
+   "tradability": 0.21
   },
   {
    "name": "Cultural services",
@@ -571,7 +622,8 @@
    "sdidSe": 0.8572,
    "importShare": 0.0,
    "ptEarly": 0.006,
-   "ptLate": 0.179
+   "ptLate": 0.179,
+   "tradability": 0.0
   },
   {
    "name": "Education",
@@ -582,7 +634,8 @@
    "sdidSe": 0.3924,
    "importShare": 0.0,
    "ptEarly": 0.0083,
-   "ptLate": 0.0358
+   "ptLate": 0.0358,
+   "tradability": 0.67
   },
   {
    "name": "Health",
@@ -593,7 +646,8 @@
    "sdidSe": 0.7392,
    "importShare": 0.0,
    "ptEarly": 0.009,
-   "ptLate": 0.0708
+   "ptLate": 0.0708,
+   "tradability": 9.09
   },
   {
    "name": "Maintenance and repair of the dwelling",
@@ -604,7 +658,8 @@
    "sdidSe": 0.4192,
    "importShare": 0.0,
    "ptEarly": 0.0172,
-   "ptLate": 0.0329
+   "ptLate": 0.0329,
+   "tradability": 0.51
   },
   {
    "name": "Package holidays",
@@ -615,7 +670,8 @@
    "sdidSe": 3.1413,
    "importShare": 0.0,
    "ptEarly": 0.3768,
-   "ptLate": 0.8749
+   "ptLate": 0.8749,
+   "tradability": 0.0
   },
   {
    "name": "Passenger transport by air",
@@ -626,7 +682,8 @@
    "sdidSe": 6.6525,
    "importShare": 0.0,
    "ptEarly": 0.6332,
-   "ptLate": 0.5466
+   "ptLate": 0.5466,
+   "tradability": 18.35
   },
   {
    "name": "Recreational and cultural services",
@@ -637,7 +694,8 @@
    "sdidSe": 0.81,
    "importShare": 0.0,
    "ptEarly": 0.0039,
-   "ptLate": 0.0381
+   "ptLate": 0.0381,
+   "tradability": 0.0
   },
   {
    "name": "Restaurants and hotels",
@@ -648,7 +706,8 @@
    "sdidSe": 0.7876,
    "importShare": 0.0,
    "ptEarly": -0.014,
-   "ptLate": 0.2648
+   "ptLate": 0.2648,
+   "tradability": 0.0
   },
   {
    "name": "Restaurants and café",
@@ -659,7 +718,8 @@
    "sdidSe": 0.5215,
    "importShare": 0.0,
    "ptEarly": 0.0138,
-   "ptLate": 0.1443
+   "ptLate": 0.1443,
+   "tradability": null
   },
   {
    "name": "Services related to housing",
@@ -670,7 +730,8 @@
    "sdidSe": 0.5504,
    "importShare": 0.0,
    "ptEarly": 0.0182,
-   "ptLate": 0.0859
+   "ptLate": 0.0859,
+   "tradability": 9.09
   },
   {
    "name": "Services related to holidays and accommodation",
@@ -681,7 +742,8 @@
    "sdidSe": 2.5512,
    "importShare": 0.0,
    "ptEarly": -0.0062,
-   "ptLate": 0.5965
+   "ptLate": 0.5965,
+   "tradability": 0.0
   },
   {
    "name": "Services related to recreation and personal care",
@@ -692,7 +754,8 @@
    "sdidSe": 0.4503,
    "importShare": 0.0,
    "ptEarly": 0.0123,
-   "ptLate": 0.0979
+   "ptLate": 0.0979,
+   "tradability": 0.0
   },
   {
    "name": "Services related to transport",
@@ -703,7 +766,8 @@
    "sdidSe": 1.3593,
    "importShare": 0.0,
    "ptEarly": 0.1141,
-   "ptLate": 0.1137
+   "ptLate": 0.1137,
+   "tradability": 6.99
   },
   {
    "name": "Telephone and telefax services",
@@ -714,7 +778,8 @@
    "sdidSe": 1.2017,
    "importShare": 0.0,
    "ptEarly": -0.0109,
-   "ptLate": 0.2575
+   "ptLate": 0.2575,
+   "tradability": 0.21
   },
   {
    "name": "Transport insurance",
@@ -725,7 +790,8 @@
    "sdidSe": 1.0337,
    "importShare": 0.0,
    "ptEarly": 0.006,
-   "ptLate": 0.0481
+   "ptLate": 0.0481,
+   "tradability": 9.09
   },
   {
    "name": "Miscellaneous services",
@@ -736,7 +802,8 @@
    "sdidSe": 0.4076,
    "importShare": null,
    "ptEarly": 0.018,
-   "ptLate": 0.1288
+   "ptLate": 0.1288,
+   "tradability": null
   },
   {
    "name": "Industrial goods (overall index)",
@@ -747,7 +814,8 @@
    "sdidSe": 0.7091,
    "importShare": null,
    "ptEarly": 0.1704,
-   "ptLate": 0.1815
+   "ptLate": 0.1815,
+   "tradability": null
   },
   {
    "name": "Durable industrial goods",
@@ -758,7 +826,8 @@
    "sdidSe": 0.692,
    "importShare": null,
    "ptEarly": 0.1994,
-   "ptLate": 0.4775
+   "ptLate": 0.4775,
+   "tradability": null
   },
   {
    "name": "Semi-durable industrial goods",
@@ -769,7 +838,8 @@
    "sdidSe": 1.3929,
    "importShare": null,
    "ptEarly": 0.0524,
-   "ptLate": 0.0024
+   "ptLate": 0.0024,
+   "tradability": null
   },
   {
    "name": "Audio-visual equipment",
@@ -780,7 +850,8 @@
    "sdidSe": 1.4257,
    "importShare": 1.0,
    "ptEarly": 0.3385,
-   "ptLate": 0.4817
+   "ptLate": 0.4817,
+   "tradability": 668.59
   },
   {
    "name": "Carpets and other floor coverings",
@@ -791,7 +862,8 @@
    "sdidSe": 0.9297,
    "importShare": 0.61,
    "ptEarly": -0.1042,
-   "ptLate": -0.0831
+   "ptLate": -0.0831,
+   "tradability": 15.46
   },
   {
    "name": "Electricity, fuels, and heat energy",
@@ -802,7 +874,8 @@
    "sdidSe": 1.5251,
    "importShare": null,
    "ptEarly": 0.0295,
-   "ptLate": 0.1649
+   "ptLate": 0.1649,
+   "tradability": 1.01
   },
   {
    "name": "Energy",
@@ -813,7 +886,8 @@
    "sdidSe": 1.7931,
    "importShare": null,
    "ptEarly": 0.4361,
-   "ptLate": 0.2581
+   "ptLate": 0.2581,
+   "tradability": 1.01
   },
   {
    "name": "Transport fuels and lubricants",
@@ -824,7 +898,8 @@
    "sdidSe": 2.282,
    "importShare": 1.0,
    "ptEarly": 0.605,
-   "ptLate": 0.1169
+   "ptLate": 0.1169,
+   "tradability": 18.46
   },
   {
    "name": "Information processing equipment",
@@ -835,7 +910,8 @@
    "sdidSe": 1.9672,
    "importShare": 1.0,
    "ptEarly": 0.1559,
-   "ptLate": -0.0611
+   "ptLate": -0.0611,
+   "tradability": 83.55
   },
   {
    "name": "Liquid fuels",
@@ -846,7 +922,8 @@
    "sdidSe": 2.9667,
    "importShare": 1.0,
    "ptEarly": 0.7469,
-   "ptLate": -0.0035
+   "ptLate": -0.0035,
+   "tradability": 18.46
   },
   {
    "name": "Maintenance and repair materials",
@@ -857,7 +934,8 @@
    "sdidSe": 0.5561,
    "importShare": 0.5,
    "ptEarly": -0.0769,
-   "ptLate": 0.0496
+   "ptLate": 0.0496,
+   "tradability": 7.26
   },
   {
    "name": "Motorcycles and bicycles",
@@ -868,7 +946,8 @@
    "sdidSe": 1.3639,
    "importShare": 0.9,
    "ptEarly": 0.5691,
-   "ptLate": 0.8035
+   "ptLate": 0.8035,
+   "tradability": 89.08
   },
   {
    "name": "Operation of transport equipment",
@@ -879,7 +958,8 @@
    "sdidSe": 1.3625,
    "importShare": null,
    "ptEarly": 0.366,
-   "ptLate": 0.1211
+   "ptLate": 0.1211,
+   "tradability": null
   },
   {
    "name": "Purchase of vehicles",
@@ -890,7 +970,8 @@
    "sdidSe": 0.8132,
    "importShare": 0.74,
    "ptEarly": 0.2774,
-   "ptLate": 0.648
+   "ptLate": 0.648,
+   "tradability": 57.7
   },
   {
    "name": "Recreation and culture",
@@ -901,7 +982,8 @@
    "sdidSe": 0.9044,
    "importShare": null,
    "ptEarly": 0.1528,
-   "ptLate": 0.279
+   "ptLate": 0.279,
+   "tradability": 45.84
   },
   {
    "name": "Solid fuels",
@@ -912,7 +994,8 @@
    "sdidSe": 0.9737,
    "importShare": 1.0,
    "ptEarly": 0.3278,
-   "ptLate": 0.8811
+   "ptLate": 0.8811,
+   "tradability": 18.46
   },
   {
    "name": "Miscellaneous goods and services",
@@ -923,7 +1006,8 @@
    "sdidSe": 0.3378,
    "importShare": null,
    "ptEarly": 0.057,
-   "ptLate": 0.1079
+   "ptLate": 0.1079,
+   "tradability": null
   }
  ],
  "prices": [
@@ -1370,6 +1454,295 @@
    "n": 71
   }
  },
+ "fx": [
+  {
+   "month": "2014-01",
+   "rate": 1.2312
+  },
+  {
+   "month": "2014-02",
+   "rate": 1.2213
+  },
+  {
+   "month": "2014-03",
+   "rate": 1.2178
+  },
+  {
+   "month": "2014-04",
+   "rate": 1.2191
+  },
+  {
+   "month": "2014-05",
+   "rate": 1.2204
+  },
+  {
+   "month": "2014-06",
+   "rate": 1.2181
+  },
+  {
+   "month": "2014-07",
+   "rate": 1.215
+  },
+  {
+   "month": "2014-08",
+   "rate": 1.2119
+  },
+  {
+   "month": "2014-09",
+   "rate": 1.2077
+  },
+  {
+   "month": "2014-10",
+   "rate": 1.2078
+  },
+  {
+   "month": "2014-11",
+   "rate": 1.2026
+  },
+  {
+   "month": "2014-12",
+   "rate": 1.2024
+  },
+  {
+   "month": "2015-01",
+   "rate": 1.0983
+  },
+  {
+   "month": "2015-02",
+   "rate": 1.0623
+  },
+  {
+   "month": "2015-03",
+   "rate": 1.0609
+  },
+  {
+   "month": "2015-04",
+   "rate": 1.0382
+  },
+  {
+   "month": "2015-05",
+   "rate": 1.0398
+  },
+  {
+   "month": "2015-06",
+   "rate": 1.0448
+  },
+  {
+   "month": "2015-07",
+   "rate": 1.0488
+  },
+  {
+   "month": "2015-08",
+   "rate": 1.0782
+  },
+  {
+   "month": "2015-09",
+   "rate": 1.0918
+  },
+  {
+   "month": "2015-10",
+   "rate": 1.0879
+  },
+  {
+   "month": "2015-11",
+   "rate": 1.083
+  },
+  {
+   "month": "2015-12",
+   "rate": 1.083
+  }
+ ],
+ "synth": {
+  "switzerland": [
+   100.02,
+   100.02,
+   100.519,
+   100.718,
+   100.818,
+   100.618,
+   100.718,
+   100.419,
+   100.917,
+   100.818,
+   100.519,
+   100.618,
+   100.0,
+   99.641,
+   100.11,
+   99.84,
+   99.92,
+   100.04,
+   99.85,
+   99.312,
+   99.651,
+   99.701,
+   99.352,
+   99.232
+  ],
+  "synthetic": [
+   100.235,
+   100.465,
+   100.791,
+   100.997,
+   101.048,
+   101.069,
+   100.88,
+   100.816,
+   101.011,
+   101.027,
+   100.819,
+   100.709,
+   100.0,
+   100.326,
+   100.968,
+   101.259,
+   101.604,
+   101.389,
+   101.079,
+   100.94,
+   100.982,
+   101.011,
+   100.824,
+   100.777
+  ],
+  "lambda": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.019,
+   0.0,
+   0.6589,
+   0.0,
+   0.0,
+   0.3221,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "weights": [
+   {
+    "country": "Austria",
+    "weight": 0.0937
+   },
+   {
+    "country": "Sweden",
+    "weight": 0.0772
+   },
+   {
+    "country": "Finland",
+    "weight": 0.0767
+   },
+   {
+    "country": "Romania",
+    "weight": 0.0738
+   },
+   {
+    "country": "Czech Republic",
+    "weight": 0.0704
+   },
+   {
+    "country": "United Kingdom",
+    "weight": 0.067
+   },
+   {
+    "country": "North Macedonia",
+    "weight": 0.0656
+   },
+   {
+    "country": "Portugal",
+    "weight": 0.0621
+   },
+   {
+    "country": "Slovakia",
+    "weight": 0.0576
+   },
+   {
+    "country": "Denmark",
+    "weight": 0.0468
+   },
+   {
+    "country": "Germany",
+    "weight": 0.045
+   },
+   {
+    "country": "Latvia",
+    "weight": 0.0407
+   },
+   {
+    "country": "Croatia",
+    "weight": 0.031
+   },
+   {
+    "country": "Estonia",
+    "weight": 0.029
+   },
+   {
+    "country": "France",
+    "weight": 0.0281
+   },
+   {
+    "country": "Lithuania",
+    "weight": 0.024
+   },
+   {
+    "country": "Poland",
+    "weight": 0.0225
+   },
+   {
+    "country": "Ireland",
+    "weight": 0.0222
+   },
+   {
+    "country": "Bulgaria",
+    "weight": 0.0221
+   },
+   {
+    "country": "Slovenia",
+    "weight": 0.0217
+   },
+   {
+    "country": "Netherlands",
+    "weight": 0.0194
+   },
+   {
+    "country": "Hungary",
+    "weight": 0.0036
+   },
+   {
+    "country": "Luxembourg",
+    "weight": 0.0
+   }
+  ]
+ },
+ "robustness": [
+  {
+   "spec": "No exclusion of volatile countries",
+   "sdid": -1.5687,
+   "pt": 0.1557
+  },
+  {
+   "spec": "Volatility measured Jan 2014 - Jan 2015 only",
+   "sdid": -1.4066,
+   "pt": 0.1396
+  },
+  {
+   "spec": "January 2015 treated (T0 = 12)",
+   "sdid": -1.094,
+   "pt": 0.1086
+  }
+ ],
  "allItems": {
   "sdid": -1.2253,
   "sdidSe": 0.4769,
