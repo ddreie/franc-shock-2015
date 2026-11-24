@@ -36,8 +36,11 @@ student IDs or e-mail addresses on the page or in commits' visible content.
 
 ## Conventions
 
-- Colours: tokens at the top of `src/styles.css` (Swiss red accent; blue = Switzerland, orange = comparison group).
-  Keep Switzerland blue in every chart.
+- Design: Swiss grid identity. Fonts Instrument Sans (text) and IBM Plex Mono (numbers, labels); tokens at the top of
+  `src/styles.css`. Red is reserved for Switzerland and the guiding line, the single blue for Europe / the comparison,
+  everything else ink and grey. Keep Switzerland red in every chart. No extra colours, gradients or decorative motion.
+- Structure: seven stations (`src/stations.ts`), the rail on the left thins from 100% to 12% (the pass-through).
+  Each section = kicker, headline, short plain-language text, one figure with caption and source.
 - Every number on the page must come from the paper, the author's package or our replication, with the source in the
   figure caption. Never invent numbers.
 - The README (German) explains the setup for the team; update it when the setup changes.
