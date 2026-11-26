@@ -117,7 +117,7 @@ writeLines(c(
 theme_set(theme_minimal(base_size = 10) + theme(panel.grid.minor = element_blank(), legend.position = "bottom"))
 mlab <- format(seq(as.Date("2014-01-01"), by = "month", length.out = 24), "%b %y")
 
-# Figure 1 (cf. Fig. 1 of the paper): prices and exchange rate, as two panels instead of a second y-axis
+# Figure 1 (cf. Fig. 1 and 4 of the paper): prices, exchange rate (separate panel instead of a second y-axis), synthetic control
 agg33 <- load_aggregate("dataset_final_normalized2015.dta") |> filter(code == catmap$code[1]) |>
   group_by(group) |> mutate(value = 100 * value / value[month == 1]) |> ungroup() |>
   mutate(group = ifelse(group == "Control", "Europe (33 countries)", "Switzerland"))
@@ -128,11 +128,10 @@ p1a <- ggplot(agg33, aes(month, value, colour = group)) + geom_vline(xintercept 
 p1b <- ggplot(fxm, aes(month, eurchf)) + geom_vline(xintercept = 13, linetype = "dotted") + geom_hline(yintercept = 1.2, colour = "grey50") +
   geom_line(linewidth = 0.8, colour = "#141414") + scale_x_continuous(breaks = seq(1, 24, 6), labels = mlab[seq(1, 24, 6)]) +
   labs(x = NULL, y = "CHF per EUR", title = "(b) EUR/CHF, monthly average")
-pdf(file.path(FIG, "fig1_replication.pdf"), width = 6.5, height = 3.4)
-grid::grid.newpage(); grid::pushViewport(grid::viewport(layout = grid::grid.layout(1, 2)))
-print(p1a, vp = grid::viewport(layout.pos.row = 1, layout.pos.col = 1), newpage = FALSE)
-print(p1b, vp = grid::viewport(layout.pos.row = 1, layout.pos.col = 2), newpage = FALSE)
-invisible(dev.off())
+small <- theme(plot.title = element_text(size = 9), axis.title = element_text(size = 8), axis.text = element_text(size = 7),
+               legend.text = element_text(size = 7))
+ggsave(file.path(FIG, "fig1a_prices.pdf"), p1a + labs(title = "Consumer prices, all items") + small, width = 3.3, height = 2.7)
+ggsave(file.path(FIG, "fig1b_eurchf.pdf"), p1b + labs(title = "EUR/CHF, monthly average") + small, width = 3.3, height = 2.7)
 
 # Figure 2 (cf. Fig. 4 of the paper): Switzerland and its synthetic control, all items
 r1 <- sdid_category(catmap$code[1], reps = 2); w <- attr(r1$est, "weights")
@@ -142,7 +141,7 @@ g4 <- ggplot(fig4, aes(month, value, colour = series)) + geom_vline(xintercept =
   geom_line(linewidth = 0.8) + scale_colour_manual(values = c(Switzerland = "#d52b1e", Synthetic = "#2a5d9f"), name = NULL) +
   scale_x_continuous(breaks = seq(1, 24, 6), labels = mlab[seq(1, 24, 6)]) +
   labs(x = NULL, y = "HICP, Jan 2015 = 100", title = "Switzerland and its synthetic control")
-ggsave(file.path(FIG, "fig4_replication.pdf"), g4, width = 4.2, height = 3.2)
+ggsave(file.path(FIG, "fig4_replication.pdf"), g4 + labs(title = "Switzerland and its synthetic control") + small, width = 3.3, height = 2.7)
 write_csv(tibble(country = rownames(r1$setup$Y)[1:r1$setup$N0], weight = w$omega), file.path(DATA_OURS, "synthetic_weights_all_items.csv"))
 write_csv(fig4 |> pivot_wider(names_from = series, values_from = value) |>
             mutate(lambda = c(w$lambda, rep(0, 24 - length(w$lambda)))), file.path(DATA_OURS, "synthetic_path_all_items.csv"))

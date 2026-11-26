@@ -46,9 +46,9 @@ Outputs in `analysis/output/`:
 | `tables/tab_main.tex` | Table 1: main result (paper vs. replication vs. alternative) |
 | `tables/tab_ext.tex` | Table 2: extension, import share and speed of pass-through |
 | `tables/tab_table4.tex`, `tables/tab_table2.tex` | replication of Tables 4 and 2 of the paper |
-| `figures/fig1_replication.pdf` | Figure 1 (cf. Fig. 1 of the paper): prices and EUR/CHF |
-| `figures/fig4_replication.pdf` | Figure 2 (cf. Fig. 4 of the paper): Switzerland and its synthetic control |
-| `figures/fig_ext_a.pdf`, `figures/fig_ext_b.pdf` | Figure 3: monthly pass-through, all items and by import share |
+| `figures/fig1a_prices.pdf`, `figures/fig1b_eurchf.pdf` | Figure 1 (a) prices and (c) EUR/CHF (cf. Fig. 1 of the paper) |
+| `figures/fig4_replication.pdf` | Figure 1 (b) (cf. Fig. 4 of the paper): Switzerland and its synthetic control |
+| `figures/fig_ext_a.pdf`, `figures/fig_ext_b.pdf` | Figure 2: monthly pass-through, all items and by import share |
 | `report_numbers.csv` | every number quoted in the text, with the script that produces it |
 
 ## Data
