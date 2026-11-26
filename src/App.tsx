@@ -23,13 +23,13 @@ function Check() {
   return (
     <div ref={ref} className={`check fade ${inView ? 'in' : ''}`}>
       <div className="seal">
-        <div className="n">{s['Categories reproduced to +-0.01 (synthetic DID)']}<small>/85</small></div>
+        <div className="n">{s['Categories reproduced +-0.01 (synthetic DID)']}<small>/85</small></div>
         <p>estimates of the paper reproduced to the second decimal, starting from the raw Eurostat data, in R.</p>
         <span className="stamp">checked 11/2026</span>
       </div>
       <ol>
         <li><b>The main result holds.</b> Pass-through <span className="mono">{data.allItems.pt.toFixed(2)}</span>, same as the paper; average over
-          all categories <span className="mono">{s['Mean pass-through (85 categories)'].toFixed(2)}</span>, range <span className="mono">{s['Min pass-through'].toFixed(2)}</span> to <span className="mono">{s['Max pass-through'].toFixed(2)}</span>.</li>
+          all categories <span className="mono">{s['Mean pass-through, 85 categories'].toFixed(2)}</span>, range <span className="mono">{s['Min pass-through'].toFixed(2)}</span> to <span className="mono">{s['Max pass-through'].toFixed(2)}</span>.</li>
         <li><b>The simple comparison uses a different group than the text says.</b> The author’s code overwrites the data with a
           10-country high-income average before running it. With the 33-country average described in the paper, pass-through is
           <span className="mono"> {(data.allItems.didEurope33 / 100 / data.exchangeRateChange).toFixed(2)}</span> instead of <span className="mono">0.16</span>, close to the main result.</li>
@@ -57,8 +57,9 @@ export default function App() {
               <p>When the franc suddenly gets stronger, how much cheaper do things get in Swiss shops, and do some products react much more than others?</p>
             </div>
             <div>
-              <h3>Approach</h3>
-              <p>Compare Swiss prices after the shock with a “synthetic Switzerland”: a mix of European countries whose prices moved like Switzerland’s before 2015 but were not hit by the franc.</p>
+              <h3>Data and approach</h3>
+              <p>Monthly consumer prices (Eurostat HICP) for Switzerland and 33 European countries, 2014–2015, split into 85 product groups.
+                Swiss prices after the shock are compared with a “synthetic Switzerland”: a mix of European countries whose prices moved like Switzerland’s before 2015 but were not hit by the franc.</p>
             </div>
             <div>
               <h3>Takeaways</h3>

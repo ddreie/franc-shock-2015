@@ -1,15 +1,16 @@
 # Synthetic DID (Arkhangelsky et al., 2021) for each category, following section 5 of the author's code:
 # drop the K_EXCL control countries with the highest price variance (over all 24 months, as in the code),
 # drop countries with missing months, estimate with synthdid, placebo standard errors.
+# Output: sdid (85 categories: estimate, placebo SE, pass-through). Used in Table 1 (Panel A col. 2, Panel B).
 
-sdid_category <- function(code, k = K_EXCL, var_months = 1:24, seed = SEED, reps = REPS) {
+sdid_category <- function(code, k = K_EXCL, var_months = 1:24, seed = SEED, reps = REPS, t0 = T0) {
   d <- panel[panel$code == code, c("country", "month", "value")]
   v <- d |> filter(country != "Switzerland", month %in% var_months) |>
     group_by(country) |> summarise(v = var(value), .groups = "drop") |> arrange(desc(v))  # NA variance sorts last
   drop_vol <- if (k > 0) head(v$country[!is.na(v$v)], k) else character(0)
   complete <- d |> group_by(country) |> summarise(ok = all(!is.na(value)), .groups = "drop") |> filter(ok) |> pull(country)
   d <- d |> filter(!country %in% drop_vol, country %in% complete) |>
-    mutate(treated = as.integer(country == "Switzerland" & month > T0)) |> as.data.frame()
+    mutate(treated = as.integer(country == "Switzerland" & month > t0)) |> as.data.frame()
   setup <- panel.matrices(d, unit = "country", time = "month", outcome = "value", treatment = "treated")
   est <- synthdid_estimate(setup$Y, setup$N0, setup$T0)
   set.seed(seed)

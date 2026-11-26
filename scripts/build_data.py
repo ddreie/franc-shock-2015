@@ -2,7 +2,8 @@
 
 Inputs:
   data/ours/*.csv               our R replication (analysis/master.R)
-  data/author/control_graph_data.csv   price paths of the comparison groups (author's package, Fig. 1/2 data)
+  data/author_prepared/control_graph_data.csv   price paths of the comparison groups (prepared by the author, Fig. 2)
+  data/raw/eurchf_monthly_snb.csv, data/raw/tradability_bls.csv
 """
 import csv, json, pathlib, statistics as st
 
@@ -46,18 +47,18 @@ for g, d in acc.items():
     speed["groups"][g] = {"values": [round(st.mean(d[m]), 4) for m in sorted(d)], "n": len(d[min(d)])}
 speed["medianImportShare"] = med
 
-summary = {r["statistic"]: num(r["ours"]) for r in read("data/ours/replication_summary.csv")}
+summary = {r["statistic"]: num(r["value"]) for r in read("analysis/output/report_numbers.csv")}
 ext = {r["dep"]: {"b": num(r["b"]), "se": num(r["se"]), "n": int(r["n"])} for r in read("data/ours/extension_regressions.csv")}
 
 series = []
-rowsg = read("data/author/control_graph_data.csv")
+rowsg = read("data/author_prepared/control_graph_data.csv")
 mlabels = [f"{m} {y}" for y in (2014, 2015) for m in "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()]
 keys = ["Switzerland", "Europe", "EU", "Eurozone", "Direct neighbours", "Germanic", "Exclud southern", "Non-EUR", "High Gdp"]
 for i, r in enumerate(rowsg):
     series.append({"month": mlabels[i], **{k: round(float(r[k]), 3) for k in keys}})
 
 # EUR/CHF monthly averages (SNB)
-fx = [{"month": r["month"], "rate": float(r["eurchf"])} for r in read("data/snb/eurchf_monthly.csv")]
+fx = [{"month": r["month"], "rate": float(r["eurchf"])} for r in read("data/raw/eurchf_monthly_snb.csv")]
 
 # Synthetic control for the all-items index: path and country weights
 path = read("data/ours/synthetic_path_all_items.csv")
@@ -69,7 +70,7 @@ synth = {"switzerland": [round(float(r["Switzerland"]), 3) for r in path],
 
 # International tradability (author's package, Fig. 5), matched by category name
 norm = lambda x: x.lower().replace("–", "-").replace(", and", " and").replace("é", "e").strip()
-trad = {norm(r["Goodtype"]): float(r["Tradability"]) for r in read("data/author/tradability_data.csv")}
+trad = {norm(r["category"]): float(r["tradability"]) for r in read("data/raw/tradability_bls.csv")}
 for c in cats:
     c["tradability"] = trad.get(norm(c["name"]))
 

@@ -12,10 +12,10 @@ student IDs or e-mail addresses on the page or in commits' visible content.
 | Part | Where | Notes |
 |---|---|---|
 | Frontend | `src/` – React + TypeScript (Vite), no chart library: charts are hand-written SVG | Hosted on Vercel, project `franc-shock-2015` |
-| Replication code | `analysis/` (R). `Rscript analysis/master.R` runs everything from the raw data in `data/author/` (~35 min) | Writes CSVs to `data/ours/` and LaTeX tables / PDF figures to `analysis/output/`. R 4.3.3, synthdid 0.0.9 (install from GitHub source) |
+| Replication code | `analysis/` (R). `Rscript analysis/master.R` runs everything from `data/raw/` (seconds with the cache in `analysis/output/cache/`, ~2.5 h from scratch) | Writes CSVs to `data/ours/`, `analysis/output/tables/`, `analysis/output/figures/` and `analysis/output/report_numbers.csv`. R 4.3.3, synthdid 0.0.9 (install from GitHub source) |
 | Category mapping | `analysis/category_map.csv` | Paper category name -> Eurostat series -> SFSO import-share label. Choices are documented in the `note` column |
-| Data for the site | `src/data/site-data.json`, built by `scripts/build_data.py` from `data/ours/` (+ `data/author/control_graph_data.csv` for the price paths) | Re-run the script after the R analysis changes |
-| Paper benchmark | `data/author/paper_tables_5to8.csv` | Tables 5-8 of the paper, typed from the PDF, for comparisons |
+| Data for the site | `src/data/site-data.json`, built by `scripts/build_data.py` from `data/ours/`, `analysis/output/report_numbers.csv`, `data/raw/` and `data/author_prepared/control_graph_data.csv` | Re-run the script after the R analysis changes |
+| Paper benchmark | `data/paper/paper_tables_5to8.csv` | Tables 5-8 of the paper, typed from the PDF, for comparisons |
 | Deploy | Vercel's GitHub integration | Every push to `main` goes live in ~1 minute; other branches get a preview URL (shown on the commit / PR on GitHub). The repo is public, so commits by all collaborators deploy on the free plan |
 
 ## Requirements from the assignment (do not break these)
@@ -43,4 +43,5 @@ student IDs or e-mail addresses on the page or in commits' visible content.
   Each section = kicker, headline, short plain-language text, one figure with caption and source.
 - Every number on the page must come from the paper, the author's package or our replication, with the source in the
   figure caption. Never invent numbers.
-- The README (German) explains the setup for the team; update it when the setup changes.
+- The README (English, part of the PS3 submission) explains the replication package; update it when the setup changes.
+- Do not add the original author's code or outputs to the repository (submission rule); only data, documented in the README.

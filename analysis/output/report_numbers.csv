@@ -1,0 +1,73 @@
+statistic,value,script,report
+"Synthetic DID, all items",-1.2253,02_synthetic_did.R,Intro; Table 1 A(2); Interpretation
+"Placebo SE, all items",0.4769,02_synthetic_did.R,Table 1 A(2)
+"t-statistic, all items",-2.5692,02_synthetic_did.R,Interpretation
+"Pass-through, all items",0.1216,02_synthetic_did.R,Intro; Table 1; Interpretation
+Categories reproduced +-0.01 (synthetic DID),84,02_synthetic_did.R,Intro; Table 1 B
+Audio-visual equipment repair: our synthetic DID,-0.1761,02_synthetic_did.R,Table 1 notes; A.3
+"Mean pass-through, 85 categories",0.1788,02_synthetic_did.R,Table 1 B
+Min pass-through,-0.3107,02_synthetic_did.R,Table 1 B
+Max pass-through,0.7952,02_synthetic_did.R,Table 1 B
+"Mean placebo SE, 85 categories",1.2043,02_synthetic_did.R,Table 1 B
+Categories significant at 5% (synthetic DID),30,02_synthetic_did.R,Table 1 B; Interpretation
+"Standard DID, all items, high-GDP control",-1.6438,03_standard_did.R,Table 1 A(2)
+"Standard DID SE (HAC), high-GDP control",0.2641,03_standard_did.R,Table 1 A(2)
+"Standard DID, all items, 33-country Europe",-1.2929,03_standard_did.R,Intro; Table 1 A(3)
+"Standard DID SE (HAC), 33-country Europe",0.2808,03_standard_did.R,Table 1 A(3)
+"Standard DID pass-through, 33-country Europe",0.1283,03_standard_did.R,Interpretation; Critical evaluation
+"Categories reproduced +-0.01 (standard DID, high-GDP)",84,03_standard_did.R,Replication text
+"Categories reproduced +-0.01 (HAC SE, high-GDP)",84,03_standard_did.R,Replication text; A.3
+"Categories reproduced +-0.01 (pre-trend, high-GDP)",82,03_standard_did.R,Replication text
+"Pre-trend difference, all items, 33-country Europe",1e-4,03_standard_did.R,Critical evaluation
+"Pre-trend SE, all items, 33-country Europe",0.0398,03_standard_did.R,Critical evaluation
+"Failed pre-trend tests at 1%, europe33",26,03_standard_did.R,Replication text
+"Failed pre-trend tests at 5%, europe33",34,03_standard_did.R,Replication text
+"Failed pre-trend tests at 10%, europe33",41,03_standard_did.R,Replication text
+"Failed pre-trend tests at 1%, highgdp",26,03_standard_did.R,Replication text
+"Failed pre-trend tests at 5%, highgdp",37,03_standard_did.R,Replication text
+"Failed pre-trend tests at 10%, highgdp",42,03_standard_did.R,Replication text
+"Failed pre-trend tests at 1%, paper",22,03_standard_did.R,Replication text
+"Failed pre-trend tests at 5%, paper",39,03_standard_did.R,Replication text
+"Failed pre-trend tests at 10%, paper",43,03_standard_did.R,Replication text
+"Synthetic DID, no exclusion (all controls), all items",-1.5687,04_robustness.R,Table 4 replication
+"Synthetic DID, pre-period volatility rule, all items",-1.4066,04_robustness.R,Table 1 A(3); Critical evaluation
+"Placebo SE, pre-period volatility rule",0.5605,04_robustness.R,Table 1 A(3)
+"Pass-through, pre-period volatility rule",0.1396,04_robustness.R,Critical evaluation; Conclusion
+"Correlation of category estimates, pre-period rule vs main",0.9655,04_robustness.R,Critical evaluation
+"Mean pass-through, pre-period rule",0.181,04_robustness.R,Critical evaluation
+"Synthetic DID, January 2015 treated, all items",-1.094,04_robustness.R,Critical evaluation
+"Pass-through, January 2015 treated",0.1086,04_robustness.R,Critical evaluation
+All controls: mean SE over 85 categories,2.2085,04_robustness.R,Replication text (Table 4)
+All controls: max pass-through,0.7456,04_robustness.R,Replication text (Table 4)
+Group mean pass-through: Food & Beverages,0.1815,06_outputs.R,Interpretation (Table 2 of paper)
+Group mean pass-through: Household Products,0.1404,06_outputs.R,Interpretation (Table 2 of paper)
+Group mean pass-through: Industrial and Other Goods,0.2992,06_outputs.R,Interpretation (Table 2 of paper)
+Group mean pass-through: Services,0.131,06_outputs.R,Interpretation (Table 2 of paper)
+Group mean pass-through: Services excl. tourism,0.059,06_outputs.R,Interpretation (Table 2 of paper)
+Group mean pass-through: All categories (unweighted),0.1795,06_outputs.R,Interpretation (Table 2 of paper)
+Group mean pass-through: All-items index (HICP weights),0.1216,06_outputs.R,Interpretation (Table 2 of paper)
+All items: pass-through Feb-Apr,0.0887,05_extension.R,Extension
+All items: SE Feb-Apr,0.0489,05_extension.R,Extension
+All items: pass-through Oct-Dec,0.1338,05_extension.R,Extension; Conclusion
+All items: SE Oct-Dec,0.0581,05_extension.R,Extension
+All items: change late - early,0.0451,05_extension.R,Extension
+All items: SE of change,0.0536,05_extension.R,Extension
+All items: share of late level reached in Feb-Apr,0.6627,05_extension.R,Extension
+"All items, monthly EUR/CHF: pass-through Feb-Apr",0.0715,05_extension.R,Extension
+"All items, monthly EUR/CHF: pass-through Oct-Dec",0.139,05_extension.R,Extension
+Categories with import share (extension sample),71,05_extension.R,Data; Extension
+"Mean pass-through Feb-Apr, 71 categories",0.1204,05_extension.R,Extension
+"Mean pass-through Oct-Dec, 71 categories",0.2072,05_extension.R,Extension
+Share of categories with late > early,0.7746,05_extension.R,Extension
+"Categories with late > early, significant at 5%",14,05_extension.R,Extension
+Median import share among goods,0.6664,06_outputs.R,Figure 3 notes
+Extension regression |PT 1y|: import share coefficient,0.1963,05_extension.R,Table 2; Extension
+Extension regression PT 1y: import share coefficient,0.1359,05_extension.R,Table 2; Extension
+Extension regression PT early: import share coefficient,0.1632,05_extension.R,Table 2; Extension
+Extension regression PT late: import share coefficient,-0.0056,05_extension.R,Table 2; Extension
+Extension regression Change: import share coefficient,-0.1688,05_extension.R,Table 2; Extension
+Extension regression |PT 1y|: HC1 SE,0.0606,05_extension.R,Table 2; Extension
+Extension regression PT 1y: HC1 SE,0.0729,05_extension.R,Table 2; Extension
+Extension regression PT early: HC1 SE,0.0676,05_extension.R,Table 2; Extension
+Extension regression PT late: HC1 SE,0.096,05_extension.R,Table 2; Extension
+Extension regression Change: HC1 SE,0.0893,05_extension.R,Table 2; Extension

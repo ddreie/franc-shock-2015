@@ -1,0 +1,7 @@
+method,all_items_pt,mean_pt,mean_se,min_pt,max_pt
+Standard,0.16,0.24,0.86,-0.58,1.01
+Standard with HAC,0.16,0.24,1.06,-0.58,1.01
+Synthetic,0.16,0.20,2.04,-0.34,0.83
+Synthetic excl. 5 countries,0.12,0.19,1.43,-0.32,0.83
+Synthetic excl. 10 countries,0.12,0.18,1.23,-0.31,0.80
+Synthetic excl. 15 countries,0.11,0.18,0.99,-0.30,0.92

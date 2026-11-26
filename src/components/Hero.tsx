@@ -54,7 +54,7 @@ export default function Hero() {
         <div className="stats fade d2">
           <div className="stat"><div className="n">−10.1%</div><div className="l">change in the EUR/CHF rate, 14 Jan to 31 Dec 2015 (1.201 → 1.080)</div></div>
           <div className="stat"><div className="n red">{a.pt.toFixed(2)}</div><div className="l">pass-through: about 12% of the shock showed up in consumer prices within a year</div></div>
-          <div className="stat"><div className="n">{data.summary['Categories reproduced to +-0.01 (synthetic DID)']}/85</div><div className="l">of the paper’s estimates we reproduced from the raw data</div></div>
+          <div className="stat"><div className="n">{data.summary['Categories reproduced +-0.01 (synthetic DID)']}/85</div><div className="l">of the paper’s estimates we reproduced from the raw data</div></div>
         </div>
         <p className="caption">Monthly averages. Source: Swiss National Bank (data.snb.ch, cube devkum). The −10.07% used for the pass-through compares the rate on 14 January and 31 December 2015, as in the paper.</p>
       </div>
