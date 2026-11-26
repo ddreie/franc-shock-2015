@@ -34,8 +34,8 @@ specifications; categories run in parallel on Linux/macOS). The results of these
 | `analysis/01_prepare_data.R` | raw HICP extract → panel of 34 countries × 468 series × 24 months; maps the paper's 85 categories to Eurostat series (`analysis/category_map.csv`) | – |
 | `analysis/02_synthetic_did.R` | synthetic DID (Arkhangelsky et al., 2021) for 85 categories, placebo SEs | Table 1 col. (2), Panel B |
 | `analysis/03_standard_did.R` | standard DID (HAC SEs) and pre-trend tests with two control series | Table 1 rows *Standard DID*, *Pre-trend*; counts of failed pre-trend tests |
-| `analysis/04_robustness.R` | excluding 0/5/10/15 volatile countries (Table 4 of the paper), volatility measured pre-period only, January 2015 treated | Table 1 col. (3); `tab_table4.tex` |
-| `analysis/05_extension.R` | monthly pass-through with the main weights; regressions on import shares; monthly-EUR/CHF variant | Table 2; Figure 3 |
+| `analysis/04_robustness.R` | excluding 0/5/10/15 volatile countries (Table 4 of the paper), volatility measured pre-period only, January 2015 treated | Table 1 col. (3); Appendix Table 3 (`tab_table4.tex`) |
+| `analysis/05_extension.R` | monthly pass-through with the main weights; regressions on import shares; monthly-EUR/CHF variant | Table 2; Figure 2 |
 | `analysis/06_outputs.R` | writes all tables, figures and the list of numbers | see below |
 | `analysis/master.R` | runs 00–06 in this order | |
 
@@ -45,7 +45,7 @@ Outputs in `analysis/output/`:
 |---|---|
 | `tables/tab_main.tex` | Table 1: main result (paper vs. replication vs. alternative) |
 | `tables/tab_ext.tex` | Table 2: extension, import share and speed of pass-through |
-| `tables/tab_table4.tex`, `tables/tab_table2.tex` | replication of Tables 4 and 2 of the paper |
+| `tables/tab_table4.tex`, `tables/tab_table2.tex` | Appendix Tables 3 and 4: replication of Tables 4 and 2 of the paper |
 | `figures/fig1a_prices.pdf`, `figures/fig1b_eurchf.pdf` | Figure 1 (a) prices and (c) EUR/CHF (cf. Fig. 1 of the paper) |
 | `figures/fig4_replication.pdf` | Figure 1 (b) (cf. Fig. 4 of the paper): Switzerland and its synthetic control |
 | `figures/fig_ext_a.pdf`, `figures/fig_ext_b.pdf` | Figure 2: monthly pass-through, all items and by import share |

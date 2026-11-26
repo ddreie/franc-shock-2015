@@ -146,7 +146,7 @@ write_csv(tibble(country = rownames(r1$setup$Y)[1:r1$setup$N0], weight = w$omega
 write_csv(fig4 |> pivot_wider(names_from = series, values_from = value) |>
             mutate(lambda = c(w$lambda, rep(0, 24 - length(w$lambda)))), file.path(DATA_OURS, "synthetic_path_all_items.csv"))
 
-# Figure 3 (extension): monthly pass-through, all items and by import-share group
+# Figure 2 (extension): monthly pass-through, all items and by import-share group
 all_m <- monthly |> filter(name == "All-items HICP")
 g1 <- ggplot(all_m, aes(month, pt)) +
   geom_hline(yintercept = 0, colour = "grey60") + geom_hline(yintercept = sdid$pt[1], linetype = "dashed", colour = "#d52b1e") +
@@ -220,7 +220,7 @@ report_numbers <- bind_rows(
   num("Mean pass-through Oct-Dec, 71 categories", mean(sp$pt_late), "05_extension.R", "Extension"),
   num("Share of categories with late > early", mean(sp$pt_late > sp$pt_early), "05_extension.R", "Extension"),
   num("Categories with late > early, significant at 5%", sum(sp$pt_change / sp$pt_change_se > 1.96), "05_extension.R", "Extension"),
-  num("Median import share among goods", med_goods, "06_outputs.R", "Figure 3 notes"),
+  num("Median import share among goods", med_goods, "06_outputs.R", "Figure 2 notes"),
   ext_table |> transmute(statistic = paste0("Extension regression ", dep, ": import share coefficient"), value = b, script = "05_extension.R", report = "Table 2; Extension"),
   ext_table |> transmute(statistic = paste0("Extension regression ", dep, ": HC1 SE"), value = se, script = "05_extension.R", report = "Table 2; Extension")
 ) |> mutate(value = round(value, 4))

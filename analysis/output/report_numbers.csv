@@ -60,7 +60,7 @@ Categories with import share (extension sample),71,05_extension.R,Data; Extensio
 "Mean pass-through Oct-Dec, 71 categories",0.2072,05_extension.R,Extension
 Share of categories with late > early,0.7746,05_extension.R,Extension
 "Categories with late > early, significant at 5%",14,05_extension.R,Extension
-Median import share among goods,0.6664,06_outputs.R,Figure 3 notes
+Median import share among goods,0.6664,06_outputs.R,Figure 2 notes
 Extension regression |PT 1y|: import share coefficient,0.1963,05_extension.R,Table 2; Extension
 Extension regression PT 1y: import share coefficient,0.1359,05_extension.R,Table 2; Extension
 Extension regression PT early: import share coefficient,0.1632,05_extension.R,Table 2; Extension

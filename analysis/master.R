@@ -11,7 +11,7 @@
 # 02_synthetic_did.R      synthetic DID for 85 categories                      -> Table 1 col. (2), Panel B
 # 03_standard_did.R       standard DID and pre-trend tests, two control series -> Table 1 rows "Standard DID", "Pre-trend"
 # 04_robustness.R         exclusion rules (Table 4 of the paper), pre-period rule, timing -> Table 1 col. (3), robustness
-# 05_extension.R          monthly pass-through and import-share regressions    -> Table 2, Figure 3
+# 05_extension.R          monthly pass-through and import-share regressions    -> Table 2, Figure 2
 # 06_outputs.R            writes tables/, figures/, report_numbers.csv and data/ours/
 
 source("analysis/00_setup.R")
