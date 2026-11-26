@@ -60,9 +60,9 @@ Outputs in `analysis/output/`:
 | `data/raw/SFSO_import_shares_data.csv` | import share of Swiss consumption by HICP category | Swiss Federal Statistical Office (unpublished), via the original replication package. Encoding CP437 |
 | `data/raw/tradability_bls.csv` | international tradability index by category | Johnson (2017) BLS tradability index as used in the paper; the column `Tradability` of `Inputs/tradability_data.csv` in the original package (the author's estimates in that file are not included) |
 | `data/raw/eurchf_monthly_snb.csv` | EUR/CHF, monthly averages 2014–2015 | Swiss National Bank data portal, cube `devkum`, series EUR1/M0, https://data.snb.ch/api/cube/devkum/data/csv/en, downloaded 24 Nov 2026 |
-| `data/author_prepared/` | aggregated control series: GDP-weighted 33-country Europe (`dataset_final_normalized2015.dta`), 10 high-GDP countries (`alternative_highgdp.dta`), all-items paths of the paper's seven comparison groups (`control_graph_data.csv`) | **prepared by the author** in the original package (`Inputs/`), used unchanged. We use them for the standard DID and the pre-trend tests, where they let us show that the author's code uses the 10-country group instead of the 33-country aggregate described in the paper, and for the comparison-group chart on the website |
+| `data/author_prepared/dataset_final_normalized2015.dta` | GDP-weighted aggregate of the 33 European control countries (the control series described in the paper) | **prepared by the author** in the original package (`Inputs/`), used unchanged. The GDP weights are not part of the original package, so this series cannot be rebuilt from the raw data. We use it for the standard DID and the pre-trend tests with the 33 countries, and for the Europe line of the comparison-group chart on the website. All other control series (10 high-GDP countries, the comparison groups of Fig. 2) are computed by our code from `data/raw/` |
 | `data/paper/paper_tables_5to8.csv` | published estimates of Tables 5–8 | typed by us from the paper, only used as a benchmark |
-| `data/ours/` | our results as CSV | written by `06_outputs.R`; read by the website |
+| `data/ours/` | our results as CSV, incl. the all-items price paths of the paper's comparison groups (`comparison_groups_all_items.csv`) | written by `06_outputs.R`; read by the website |
 
 ## How our replication differs from the original
 
@@ -70,7 +70,7 @@ Outputs in `analysis/output/`:
   raw extract, with one master script.
 - Categories are matched to Eurostat series through an explicit, documented mapping (`analysis/category_map.csv`);
   the original relabels series by hand.
-- The standard DID is run with both control series. The published standard DID and pre-trend columns are reproduced
+- The standard DID is run with both control series; the 10-country high-GDP series is rebuilt from the raw data. The published standard DID and pre-trend columns are reproduced
   only with the 10-country high-GDP group, because a loop in the original code overwrites the data frame.
 - Placebo standard errors use fixed seeds, so they are reproducible.
 - Robustness checks (exclusion rule measured on pre-period data only, timing of the treatment) and an extension on the
@@ -83,4 +83,4 @@ and the main pass-through of 0.12 is reproduced exactly.
 
 The interactive website (Problem Set 4) lives in the same repository: `src/` (React + TypeScript, Vite), data built
 by `scripts/build_data.py` from `data/ours/`. `npm install && npm run build` builds it; Vercel deploys `main`
-automatically. Design and contribution rules for the team are in `CLAUDE.md`.
+automatically. 

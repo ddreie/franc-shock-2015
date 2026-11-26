@@ -2,7 +2,7 @@
 
 Inputs:
   data/ours/*.csv               our R replication (analysis/master.R)
-  data/author_prepared/control_graph_data.csv   price paths of the comparison groups (prepared by the author, Fig. 2)
+  (incl. data/ours/comparison_groups_all_items.csv: price paths of the comparison groups, cf. Fig. 2 of the paper)
   data/raw/eurchf_monthly_snb.csv, data/raw/tradability_bls.csv
 """
 import csv, json, pathlib, statistics as st
@@ -51,7 +51,7 @@ summary = {r["statistic"]: num(r["value"]) for r in read("analysis/output/report
 ext = {r["dep"]: {"b": num(r["b"]), "se": num(r["se"]), "n": int(r["n"])} for r in read("data/ours/extension_regressions.csv")}
 
 series = []
-rowsg = read("data/author_prepared/control_graph_data.csv")
+rowsg = read("data/ours/comparison_groups_all_items.csv")
 mlabels = [f"{m} {y}" for y in (2014, 2015) for m in "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()]
 keys = ["Switzerland", "Europe", "EU", "Eurozone", "Direct neighbours", "Germanic", "Exclud southern", "Non-EUR", "High Gdp"]
 for i, r in enumerate(rowsg):

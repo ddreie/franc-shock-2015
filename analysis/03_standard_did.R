@@ -1,8 +1,10 @@
 # Standard DID (paper eq. 3) and pre-trend tests (eq. 1-2) against an aggregate European control series.
-# Two control series, both prepared by the author (data/author_prepared):
-#   "europe33": the GDP-weighted 33-country aggregate (dataset_final_normalized2015.dta), as described in the paper;
-#   "highgdp":  the 10-country high-GDP aggregate (alternative_highgdp.dta), which the author's code actually uses,
-#               because the loop in section 3 of "Main analysis.Rmd" overwrites df before the DID in section 4.
+# Two control series:
+#   "europe33": the GDP-weighted 33-country aggregate described in the paper. Prepared by the author
+#               (data/author_prepared/dataset_final_normalized2015.dta); the GDP weights are not in the original
+#               package, so this series cannot be rebuilt from the raw data and is used unchanged.
+#   "highgdp":  the 10-country high-GDP aggregate, which the author's code actually uses, because the loop in section 3
+#               of "Main analysis.Rmd" overwrites df before the DID in section 4. Rebuilt here from the raw panel.
 # Standard errors: OLS and HAC (sandwich::vcovHAC defaults), cf. Table 4 rows "Standard" and "Standard with HAC".
 # Output: std (85 categories x 2 control series), pretrend_fail (counts of failed pre-trend tests).
 
@@ -12,6 +14,19 @@ load_aggregate <- function(file) {
     select(group, month, starts_with("x_")) |>
     pivot_longer(starts_with("x_"), names_to = "code", values_to = "value") |>
     mutate(code = as.integer(sub("x_", "", code)))
+}
+
+# 10 countries with the highest GDP per capita (paper, section 6): simple mean per month over the countries with data,
+# as in the author's data_preparation_alternative_controls.do. As there, a series with 15 or more missing values
+# (out of 48: control mean and Switzerland) is dropped.
+HIGHGDP <- c("Luxembourg", "Ireland", "Norway", "Denmark", "Netherlands", "Iceland", "Austria", "Sweden", "Germany", "Belgium")
+highgdp_aggregate <- function() {
+  ctrl <- panel |> filter(country %in% HIGHGDP) |> group_by(code, month) |>
+    summarise(value = mean(value, na.rm = TRUE), .groups = "drop") |>
+    mutate(group = "Control", value = ifelse(is.nan(value), NA_real_, value))
+  ch <- panel |> filter(country == "Switzerland") |> mutate(group = "Switzerland")
+  bind_rows(ctrl, ch) |> select(group, month, code, value) |>
+    group_by(code) |> mutate(value = if (sum(is.na(value)) >= 15) NA_real_ else value) |> ungroup()
 }
 
 std_did <- function(agg, code) {
@@ -34,7 +49,7 @@ pretrend <- function(agg, code) {
 
 std <- list()
 for (ctrl in c("europe33", "highgdp")) {
-  agg <- load_aggregate(c(europe33 = "dataset_final_normalized2015.dta", highgdp = "alternative_highgdp.dta")[ctrl])
+  agg <- if (ctrl == "europe33") load_aggregate("dataset_final_normalized2015.dta") else highgdp_aggregate()
   std[[ctrl]] <- bind_rows(lapply(catmap$code, function(k) bind_cols(std_did(agg, k), pretrend(agg, k)))) |>
     mutate(name = catmap$name, control = ctrl, .before = 1)
 }

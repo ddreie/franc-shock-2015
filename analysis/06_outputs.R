@@ -225,4 +225,29 @@ report_numbers <- bind_rows(
   ext_table |> transmute(statistic = paste0("Extension regression ", dep, ": HC1 SE"), value = se, script = "05_extension.R", report = "Table 2; Extension")
 ) |> mutate(value = round(value, 4))
 write_csv(report_numbers, file.path(OUT, "report_numbers.csv"))
+
+# --- Website only: all-items price paths of the paper's comparison groups (cf. Fig. 2 of the paper) ---------------------
+# Simple means over countries with data, rebuilt from the raw panel as in the author's data_preparation_alternative_controls.do.
+# "Europe" is the GDP-weighted 33-country aggregate (author_prepared, see 03_standard_did.R). The author's "Eurozone"
+# line averages the 19 euro countries of 2015 without Ireland; we follow this so that the chart matches Fig. 2.
+eu28 <- c("Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czech Republic", "Denmark", "Estonia", "Finland", "France",
+          "Germany", "Greece", "Hungary", "Ireland", "Italy", "Latvia", "Lithuania", "Luxembourg", "Malta", "Netherlands",
+          "Poland", "Portugal", "Romania", "Slovakia", "Slovenia", "Spain", "Sweden", "United Kingdom")
+comparison <- list(
+  "EU" = eu28,
+  "Eurozone" = c("Austria", "Belgium", "Cyprus", "Estonia", "Finland", "France", "Germany", "Greece", "Italy", "Latvia",
+                 "Lithuania", "Luxembourg", "Malta", "Netherlands", "Portugal", "Slovakia", "Slovenia", "Spain"),
+  "Direct neighbours" = c("Austria", "Germany", "France", "Italy"),
+  "Germanic" = c("Austria", "Germany"),
+  "Exclud southern" = setdiff(unique(panel$country), c("Portugal", "Greece", "Spain", "Italy", "Switzerland")),
+  "Non-EUR" = c("United Kingdom", "Bulgaria", "Czech Republic", "Denmark", "Croatia", "Hungary", "Poland", "Romania", "Sweden"),
+  "High Gdp" = HIGHGDP)
+ai <- panel[panel$code == catmap$code[1], ]
+groups_path <- bind_cols(
+  tibble(month = 1:24, Switzerland = ai$value[ai$country == "Switzerland"][order(ai$month[ai$country == "Switzerland"])],
+         Europe = load_aggregate("dataset_final_normalized2015.dta") |> filter(code == catmap$code[1], group == "Control") |>
+           arrange(month) |> pull(value)),
+  as_tibble(lapply(comparison, function(cs) ai |> filter(country %in% cs) |> group_by(month) |>
+                     summarise(v = mean(value, na.rm = TRUE)) |> arrange(month) |> pull(v))))
+write_csv(groups_path, file.path(DATA_OURS, "comparison_groups_all_items.csv"))
 cat("Outputs written to", TAB, FIG, "and", DATA_OURS, "\n")

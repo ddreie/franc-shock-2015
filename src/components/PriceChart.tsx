@@ -111,7 +111,7 @@ export default function PriceChart() {
       </p>
       <p className="caption">
         Harmonised index of consumer prices, all items. Hover over a line or a label to highlight a group; click a label to show or hide it.
-        The comparison groups are those of the paper (Table 1 and Fig. 2). Source: Eurostat, via the replication package of Oktay (2022).
+        The comparison groups are those of the paper (Table 1 and Fig. 2); group averages computed by us, the GDP-weighted Europe line is the author’s aggregate. Source: Eurostat, via the replication package of Oktay (2022).
       </p>
     </figure>
   );
